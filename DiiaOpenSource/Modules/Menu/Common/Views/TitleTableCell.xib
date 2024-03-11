@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleTableCell" rowHeight="53" id="wo3-r0-mTv" customClass="TitleTableCell" customModule="DiiaOpenSource" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="713" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wo3-r0-mTv" id="vz2-LH-JWi">
+                <rect key="frame" x="0.0" y="0.0" width="713" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rrs-f4-Tp7">
+                        <rect key="frame" x="24" y="13" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="MhH-rl-Qyj"/>
+                            <constraint firstAttribute="height" constant="24" id="nXs-nJ-ifA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same as main shipping address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3j-vH-4xx">
+                        <rect key="frame" x="64" y="16" width="633" height="21"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="d3j-vH-4xx" secondAttribute="bottom" constant="16" id="RN4-VS-f53"/>
+                    <constraint firstAttribute="trailing" secondItem="d3j-vH-4xx" secondAttribute="trailing" constant="16" id="W9L-ce-TEr"/>
+                    <constraint firstItem="rrs-f4-Tp7" firstAttribute="leading" secondItem="vz2-LH-JWi" secondAttribute="leading" constant="24" id="Zku-KD-MlY"/>
+                    <constraint firstItem="rrs-f4-Tp7" firstAttribute="top" secondItem="d3j-vH-4xx" secondAttribute="top" constant="-3" id="jVr-t7-hNA"/>
+                    <constraint firstItem="d3j-vH-4xx" firstAttribute="top" secondItem="vz2-LH-JWi" secondAttribute="top" constant="16" id="rMG-iD-PFb"/>
+                    <constraint firstItem="d3j-vH-4xx" firstAttribute="leading" secondItem="rrs-f4-Tp7" secondAttribute="trailing" constant="16" id="xfa-w5-qS7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iconImageView" destination="rrs-f4-Tp7" id="Xbn-sE-Dyw"/>
+                <outlet property="titleLabel" destination="d3j-vH-4xx" id="2dD-xF-1n2"/>
+            </connections>
+            <point key="canvasLocation" x="-2058.695652173913" y="160.37946428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

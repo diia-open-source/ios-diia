@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchTableCell" rowHeight="64" id="5cj-LL-gcG" userLabel="SwitchTableCell" customClass="SwitchTableCell" customModule="DiiaOpenSource" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="715" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5cj-LL-gcG" id="Ho8-k3-YUn">
+                <rect key="frame" x="0.0" y="0.0" width="715" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eWQ-Np-uGA">
+                        <rect key="frame" x="24" y="20" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="2c4-bl-CWw"/>
+                            <constraint firstAttribute="width" constant="24" id="5O9-RW-0kg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same as main shipping address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlR-Uj-Kg1">
+                        <rect key="frame" x="64" y="16" width="570" height="32"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLi-as-s8n">
+                        <rect key="frame" x="642" y="16.5" width="51" height="31"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="onTintColor" red="0.37647058823529411" green="0.78431372549019607" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </switch>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="YLi-as-s8n" firstAttribute="centerY" secondItem="Ho8-k3-YUn" secondAttribute="centerY" id="6VH-f9-vPv"/>
+                    <constraint firstItem="PlR-Uj-Kg1" firstAttribute="top" secondItem="Ho8-k3-YUn" secondAttribute="top" constant="16" id="ILq-nf-2DA"/>
+                    <constraint firstAttribute="bottom" secondItem="PlR-Uj-Kg1" secondAttribute="bottom" constant="16" id="b9R-kv-jVi"/>
+                    <constraint firstItem="eWQ-Np-uGA" firstAttribute="leading" secondItem="Ho8-k3-YUn" secondAttribute="leading" constant="24" id="eWa-bL-phE"/>
+                    <constraint firstItem="eWQ-Np-uGA" firstAttribute="centerY" secondItem="Ho8-k3-YUn" secondAttribute="centerY" id="h4t-JU-cmL"/>
+                    <constraint firstItem="YLi-as-s8n" firstAttribute="leading" secondItem="PlR-Uj-Kg1" secondAttribute="trailing" constant="8" id="kr9-Oq-CGq"/>
+                    <constraint firstAttribute="trailing" secondItem="YLi-as-s8n" secondAttribute="trailing" constant="24" id="xZO-bs-PFi"/>
+                    <constraint firstItem="PlR-Uj-Kg1" firstAttribute="leading" secondItem="eWQ-Np-uGA" secondAttribute="trailing" constant="16" id="zaP-Fv-FkL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iconImageView" destination="eWQ-Np-uGA" id="NBI-Y7-cEN"/>
+                <outlet property="switcher" destination="YLi-as-s8n" id="CPM-Le-2ry"/>
+                <outlet property="titleLabel" destination="PlR-Uj-Kg1" id="Gn4-ah-S1x"/>
+            </connections>
+            <point key="canvasLocation" x="-2057.2463768115945" y="164.0625"/>
+        </tableViewCell>
+    </objects>
+</document>

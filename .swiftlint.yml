@@ -1,0 +1,63 @@
+warning_threshold: 30
+
+excluded:
+  - DiiaOpenSource/Resources/
+  - DiiaOpenSource/Resources/Strings/Localizable.swift
+
+disabled_rules:
+  - control_statement
+  - trailing_whitespace
+  - valid_ibinspectable
+
+opt_in_rules:
+  - void_return
+  - private_outlet
+  - multiline_arguments
+  - return_arrow_whitespace
+  - force_unwrapping
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+  ignores_case_statements: true
+
+type_name:
+  max_length:
+    warning: 50
+    error: 60
+  min_length:
+    warning: 1
+
+identifier_name:
+  max_length:
+    warning: 50
+    error: 60
+  min_length:
+    warning: 1
+
+line_length: 250
+
+function_body_length:
+  warning: 70
+
+function_parameter_count:
+  warning: 10
+  error: 15
+
+file_length:
+  warning: 500
+
+type_body_length:
+  warning: 400
+  error: 450
+
+nesting:
+  type_level:
+    warning: 2
+
+analyzer_rules:
+  - unused_import
+  - unused_declaration
+  
+unused_declaration:
+  severity: warning

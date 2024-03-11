@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="oct-0b-YfX">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i5F-om-Nev" customClass="SettingsViewController" customModule="DiiaOpenSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x2Y-AH-BBu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Налаштування]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlb-2Y-WzX">
+                                <rect key="frame" x="142.5" y="60.5" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6rX-Fc-xIV">
+                                <rect key="frame" x="0.0" y="105.5" width="414" height="756.5"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.92549019607843142" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-jD-iac">
+                                <rect key="frame" x="14" y="49" width="34" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="DWS-Wy-7yE"/>
+                                    <constraint firstAttribute="height" constant="44" id="Pfd-W6-zoP"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="5" maxX="0.0" maxY="5"/>
+                                <state key="normal" image="menu_back"/>
+                                <connections>
+                                    <action selector="backButtonTapped" destination="i5F-om-Nev" eventType="touchUpInside" id="q3n-Cv-uGo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xm7-67-Nhi"/>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.92549019607843142" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xm7-67-Nhi" firstAttribute="bottom" secondItem="6rX-Fc-xIV" secondAttribute="bottom" id="FnP-Az-Oaj"/>
+                            <constraint firstItem="gaO-jD-iac" firstAttribute="top" secondItem="xm7-67-Nhi" secondAttribute="top" constant="5" id="Vqm-Wp-oRd"/>
+                            <constraint firstItem="6rX-Fc-xIV" firstAttribute="leading" secondItem="xm7-67-Nhi" secondAttribute="leading" id="aNK-Vd-KG8"/>
+                            <constraint firstItem="xm7-67-Nhi" firstAttribute="trailing" secondItem="6rX-Fc-xIV" secondAttribute="trailing" id="bBG-Fp-IPr"/>
+                            <constraint firstItem="gaO-jD-iac" firstAttribute="leading" secondItem="xm7-67-Nhi" secondAttribute="leading" constant="14" id="gxd-Qx-gvH"/>
+                            <constraint firstItem="6rX-Fc-xIV" firstAttribute="top" secondItem="mlb-2Y-WzX" secondAttribute="bottom" constant="24" id="jhP-ua-O9O"/>
+                            <constraint firstItem="mlb-2Y-WzX" firstAttribute="centerY" secondItem="gaO-jD-iac" secondAttribute="centerY" id="rCp-yQ-fsM"/>
+                            <constraint firstItem="mlb-2Y-WzX" firstAttribute="centerX" secondItem="x2Y-AH-BBu" secondAttribute="centerX" id="z2s-l0-JC5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6rX-Fc-xIV" id="3M5-YY-4qS"/>
+                        <outlet property="titleLabel" destination="mlb-2Y-WzX" id="biG-5b-cy5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myf-23-zAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_back" width="20.5" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WGN-J2-X9C">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="Ljx-Ty-qQJ">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="WGN-J2-X9C" customClass="SplashScreenViewController" customModule="DiiaOpenSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T74-kA-lmS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light_background" translatesAutoresizingMaskIntoConstraints="NO" id="G73-YX-z7d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Q0-ga-0Lu">
+                                <rect key="frame" x="188.5" y="344" width="37.5" height="48"/>
+                                <fontDescription key="fontDescription" name="e-Ukraine-Regular" family="e-Ukraine" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="331" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-iu-qS8" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="62" y="702" width="290" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="splash_cropped"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qyh-rS-6Gm"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GEn-iu-qS8" firstAttribute="width" secondItem="T74-kA-lmS" secondAttribute="width" multiplier="0.7" id="8B9-Kd-Rj3"/>
+                            <constraint firstItem="GEn-iu-qS8" firstAttribute="centerX" secondItem="T74-kA-lmS" secondAttribute="centerX" id="IvE-LL-D91"/>
+                            <constraint firstItem="G73-YX-z7d" firstAttribute="leading" secondItem="T74-kA-lmS" secondAttribute="leading" id="JCd-8C-Pnc"/>
+                            <constraint firstItem="3Q0-ga-0Lu" firstAttribute="centerY" secondItem="T74-kA-lmS" secondAttribute="centerY" constant="-80" id="Oyr-Nh-NxR"/>
+                            <constraint firstItem="qyh-rS-6Gm" firstAttribute="bottom" secondItem="GEn-iu-qS8" secondAttribute="bottom" constant="32" id="W2A-fI-Pal"/>
+                            <constraint firstItem="G73-YX-z7d" firstAttribute="top" secondItem="T74-kA-lmS" secondAttribute="top" id="dP6-0F-ueR"/>
+                            <constraint firstAttribute="trailing" secondItem="G73-YX-z7d" secondAttribute="trailing" id="iXV-Tt-9UK"/>
+                            <constraint firstAttribute="bottom" secondItem="G73-YX-z7d" secondAttribute="bottom" id="mN1-UM-8xq"/>
+                            <constraint firstItem="3Q0-ga-0Lu" firstAttribute="centerX" secondItem="T74-kA-lmS" secondAttribute="centerX" id="vn0-7n-PEr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="GEn-iu-qS8" id="wRm-zd-FnR"/>
+                        <outlet property="titleLabel" destination="3Q0-ga-0Lu" id="QFX-Hk-ar3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4V-dn-mvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="GEn-iu-qS8">
+            <size key="intrinsicContentSize" width="331" height="128"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="light_background" width="750" height="1574"/>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prolong Start View Controller-->
+        <scene sceneID="kOP-u8-KAY">
+            <objects>
+                <viewController storyboardIdentifier="ProlongStartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0aO-85-aDn" customClass="ProlongStartViewController" customModule="DiiaOpenSource" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T0M-g0-mTz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light_background" translatesAutoresizingMaskIntoConstraints="NO" id="EiD-m2-wib">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Підтвердження особи користувача]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cia-lp-ShC">
+                                <rect key="frame" x="24" y="86" width="366" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1K-Mw-qIZ">
+                                <rect key="frame" x="24" y="157" width="366" height="129"/>
+                                <string key="text">[Для захисту ваших персональних даних, Дія один раз на 30 днів буде запитувати підтвердження особи.]
+
+[Доступ до даних у застосунку можна отримати лише у разі успішного підтвердження. Так ви можете бути впевнені у безпеці своїх даних.]
+
+[Для підтвердження особи користувача - оберіть спосіб піддтвердження та слідуйте підказкам.]</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWQ-WH-TP4">
+                                <rect key="frame" x="0.0" y="734" width="414" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgY-nL-G7X" customClass="LoadingStateButton" customModule="DiiaUIComponents">
+                                        <rect key="frame" x="184" y="40" width="46" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="XYW-cv-9co"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="actionButtonTapped" destination="0aO-85-aDn" eventType="touchUpInside" id="A2T-1c-XcA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hgY-nL-G7X" firstAttribute="top" secondItem="iWQ-WH-TP4" secondAttribute="top" constant="40" id="Bz6-gj-RbH"/>
+                                    <constraint firstItem="hgY-nL-G7X" firstAttribute="centerX" secondItem="iWQ-WH-TP4" secondAttribute="centerX" id="Inq-YM-hQJ"/>
+                                    <constraint firstAttribute="height" constant="128" id="fNa-FR-lhg"/>
+                                    <constraint firstAttribute="bottom" secondItem="hgY-nL-G7X" secondAttribute="bottom" constant="40" id="jCi-B3-Ym4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rEs-ay-vSN"/>
+                        <color key="backgroundColor" red="0.77254901960784317" green="0.85098039215686272" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EiD-m2-wib" firstAttribute="top" secondItem="T0M-g0-mTz" secondAttribute="top" id="2yl-Hy-SCp"/>
+                            <constraint firstAttribute="bottom" secondItem="EiD-m2-wib" secondAttribute="bottom" id="8MF-eL-ZhB"/>
+                            <constraint firstItem="rEs-ay-vSN" firstAttribute="trailing" secondItem="iWQ-WH-TP4" secondAttribute="trailing" id="Bt4-5K-2yl"/>
+                            <constraint firstItem="I1K-Mw-qIZ" firstAttribute="leading" secondItem="rEs-ay-vSN" secondAttribute="leading" constant="24" id="DtR-TS-HLv"/>
+                            <constraint firstItem="Cia-lp-ShC" firstAttribute="top" secondItem="rEs-ay-vSN" secondAttribute="top" constant="38" id="IOy-Av-Gvd"/>
+                            <constraint firstItem="rEs-ay-vSN" firstAttribute="bottom" secondItem="iWQ-WH-TP4" secondAttribute="bottom" id="MYd-qA-Mgm"/>
+                            <constraint firstItem="EiD-m2-wib" firstAttribute="trailing" secondItem="rEs-ay-vSN" secondAttribute="trailing" id="PYJ-9l-cCW"/>
+                            <constraint firstItem="Cia-lp-ShC" firstAttribute="leading" secondItem="rEs-ay-vSN" secondAttribute="leading" constant="24" id="WcT-jt-MRG"/>
+                            <constraint firstItem="EiD-m2-wib" firstAttribute="leading" secondItem="rEs-ay-vSN" secondAttribute="leading" id="dzd-hI-5OM"/>
+                            <constraint firstItem="iWQ-WH-TP4" firstAttribute="leading" secondItem="rEs-ay-vSN" secondAttribute="leading" id="gPq-w2-rvy"/>
+                            <constraint firstItem="rEs-ay-vSN" firstAttribute="trailing" secondItem="I1K-Mw-qIZ" secondAttribute="trailing" constant="24" id="qGJ-AT-7Mh"/>
+                            <constraint firstItem="I1K-Mw-qIZ" firstAttribute="top" secondItem="Cia-lp-ShC" secondAttribute="bottom" constant="16" id="sZe-fI-bZA"/>
+                            <constraint firstItem="rEs-ay-vSN" firstAttribute="trailing" secondItem="Cia-lp-ShC" secondAttribute="trailing" constant="24" id="xuF-IL-2ia"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="hgY-nL-G7X" id="yxY-G6-jRQ"/>
+                        <outlet property="detailsLabel" destination="I1K-Mw-qIZ" id="co5-u2-5JS"/>
+                        <outlet property="titleLabel" destination="Cia-lp-ShC" id="Sa6-rc-sTj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djn-2e-zlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269.56521739130437" y="142.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="light_background" width="390" height="1069"/>
+    </resources>
+</document>
