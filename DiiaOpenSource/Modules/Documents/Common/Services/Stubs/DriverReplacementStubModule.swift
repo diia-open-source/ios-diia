@@ -2,12 +2,6 @@ import UIKit
 import DiiaMVPModule
 import DiiaUIComponents
 
-class DriverReplacementStubModule: BaseModule {
-    func viewController() -> UIViewController {
-        return DriverReplacementStubViewController()
-    }
-}
-
 class DriverReplacementStubViewController: UIViewController, BaseView {
     
     override func viewDidLoad() {
