@@ -13,9 +13,6 @@ final class ProlongStartPresenter {
     // MARK: - Properties
     unowned var view: ProlongStartView
     private let completionHandler: Callback
-    
-    private var didRetry = false
-    
     private let verificationService = ServicesProvider.shared.verificationService
 
     // MARK: - Init
