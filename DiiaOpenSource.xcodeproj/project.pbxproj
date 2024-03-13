@@ -170,7 +170,6 @@
 		7BE1994E2B16E393008C9FAC /* DocType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1994D2B16E393008C9FAC /* DocType.swift */; };
 		7BE199502B16E543008C9FAC /* DocumentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1994F2B16E543008C9FAC /* DocumentsResponse.swift */; };
 		7BE199522B16E5E1008C9FAC /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199512B16E5E1008C9FAC /* ServicesProvider.swift */; };
-		7BE199562B16E753008C9FAC /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199552B16E753008C9FAC /* LocalizationHelper.swift */; };
 		7BE199642B17C230008C9FAC /* FaqOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199632B17C230008C9FAC /* FaqOpener.swift */; };
 		7BE199672B17C319008C9FAC /* DriverReplacementStubModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199662B17C319008C9FAC /* DriverReplacementStubModule.swift */; };
 		9487B53F2B76594800571A1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9487B53E2B76594800571A1D /* Alamofire */; };
@@ -333,7 +332,6 @@
 		7BE1994D2B16E393008C9FAC /* DocType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocType.swift; sourceTree = "<group>"; };
 		7BE1994F2B16E543008C9FAC /* DocumentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsResponse.swift; sourceTree = "<group>"; };
 		7BE199512B16E5E1008C9FAC /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
-		7BE199552B16E753008C9FAC /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
 		7BE199632B17C230008C9FAC /* FaqOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqOpener.swift; sourceTree = "<group>"; };
 		7BE199662B17C319008C9FAC /* DriverReplacementStubModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverReplacementStubModule.swift; sourceTree = "<group>"; };
 		9A8FD5EC2B90D97500794736 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -537,7 +535,6 @@
 				7BE198E92B14FBDF008C9FAC /* TemplateActionFactory.swift */,
 				42F9238C29FBF61B0072DDC1 /* MigrationService.swift */,
 				7BE199512B16E5E1008C9FAC /* ServicesProvider.swift */,
-				7BE199552B16E753008C9FAC /* LocalizationHelper.swift */,
 				7B0AACF42B8C60D8007E00B8 /* AnalyticsProvider.swift */,
 			);
 			path = Services;
@@ -1245,7 +1242,6 @@
 				7B7693CA2B7AE63E0007A89F /* SharingDocsAPIClient.swift in Sources */,
 				42F9242E29FBF61B0072DDC1 /* RoundButton.swift in Sources */,
 				42F931DF29FBF7D20072DDC1 /* SplashScreenViewController.swift in Sources */,
-				7BE199562B16E753008C9FAC /* LocalizationHelper.swift in Sources */,
 				42F9336E29FBF7D30072DDC1 /* StartAuthorizationModule.swift in Sources */,
 				42F9325629FBF7D20072DDC1 /* SettingsManager.swift in Sources */,
 				42F9310C29FBF7D10072DDC1 /* DiiaQRScannerHelper.swift in Sources */,
