@@ -17,7 +17,6 @@ final class StartAuthorizationPresenter: StartAuthorizationAction {
     
     unowned var view: StartAuthorizationView
     private let apiClient: AuthorizationApiClient
-    private let authFlow: AuthFlow
     private let storeHelper: StoreHelperProtocol = StoreHelper.instance
     private let bag = DisposeBag()
 
@@ -28,7 +27,6 @@ final class StartAuthorizationPresenter: StartAuthorizationAction {
     init(view: StartAuthorizationView, authApiClient: AuthorizationApiClient) {
         self.view = view
         self.apiClient = authApiClient
-        self.authFlow = .login
     }
 
     // MARK: - Public Methods
