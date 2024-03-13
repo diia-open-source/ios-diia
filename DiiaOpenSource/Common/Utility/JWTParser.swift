@@ -2,14 +2,12 @@ import Foundation
 import DiiaCommonTypes
 
 struct JWTToken: Decodable {
-    private let issuedAt: Int
     private let expiration: Int
     
     var expirationDate: Date { return Date(timeIntervalSince1970: Double(expiration)) }
     var isExpired: Bool { expirationDate - Date() < JWTToken.expirationInterval }
     
     private enum CodingKeys: String, CodingKey {
-        case issuedAt = "iat"
         case expiration = "exp"
     }
     
