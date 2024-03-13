@@ -5,7 +5,6 @@ import DiiaUIComponents
 protocol MenuView: BaseView {
     func clearStack()
     func addList(list: DSListViewModel)
-    func addTransparentList(list: DSListViewModel)
     func share(url: String)
     func setTitle(title: String)
 }
@@ -79,12 +78,6 @@ extension MenuViewController: MenuView {
     
     func addList(list: DSListViewModel) {
         let view = DSWhiteColoredListView()
-        view.configure(viewModel: list)
-        stackView.addArrangedSubview(view)
-    }
-    
-    func addTransparentList(list: DSListViewModel) {
-        let view = DSTransparentListView()
         view.configure(viewModel: list)
         stackView.addArrangedSubview(view)
     }
