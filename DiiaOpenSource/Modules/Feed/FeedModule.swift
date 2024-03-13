@@ -7,7 +7,7 @@ final class FeedModule: BaseModule {
     
     init() {
         view = FeedViewController()
-        presenter = FeedPresenter(view: view)
+        presenter = FeedPresenter()
         view.presenter = presenter
     }
 
