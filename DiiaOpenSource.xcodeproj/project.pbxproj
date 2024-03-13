@@ -135,7 +135,6 @@
 		7B7693DC2B7B05D60007A89F /* DocumentsStackReorderingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7693D82B7B05D60007A89F /* DocumentsStackReorderingModule.swift */; };
 		7B7693DD2B7B05D60007A89F /* DocumentsStackReorderingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7693D92B7B05D60007A89F /* DocumentsStackReorderingViewController.swift */; };
 		7B7693DE2B7B05D60007A89F /* DocumentsStackReorderingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B7693DA2B7B05D60007A89F /* DocumentsStackReorderingViewController.xib */; };
-		7B7693E22B7B07AD0007A89F /* DSTransparentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7693E12B7B07AD0007A89F /* DSTransparentListView.swift */; };
 		7B7693E52B7B090A0007A89F /* ActionSheetV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7693E42B7B090A0007A89F /* ActionSheetV2ViewController.swift */; };
 		7B7693E72B7C7E230007A89F /* AuthorizationStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7693E62B7C7E230007A89F /* AuthorizationStateHandler.swift */; };
 		7B7693E92B7C85A60007A89F /* BorderedCheckmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7693E82B7C85A60007A89F /* BorderedCheckmarksView.swift */; };
@@ -292,7 +291,6 @@
 		7B7693D82B7B05D60007A89F /* DocumentsStackReorderingModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsStackReorderingModule.swift; sourceTree = "<group>"; };
 		7B7693D92B7B05D60007A89F /* DocumentsStackReorderingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsStackReorderingViewController.swift; sourceTree = "<group>"; };
 		7B7693DA2B7B05D60007A89F /* DocumentsStackReorderingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentsStackReorderingViewController.xib; sourceTree = "<group>"; };
-		7B7693E12B7B07AD0007A89F /* DSTransparentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSTransparentListView.swift; sourceTree = "<group>"; };
 		7B7693E42B7B090A0007A89F /* ActionSheetV2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetV2ViewController.swift; sourceTree = "<group>"; };
 		7B7693E62B7C7E230007A89F /* AuthorizationStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationStateHandler.swift; sourceTree = "<group>"; };
 		7B7693E82B7C85A60007A89F /* BorderedCheckmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedCheckmarksView.swift; sourceTree = "<group>"; };
@@ -907,7 +905,6 @@
 		7B7693E02B7B079D0007A89F /* List */ = {
 			isa = PBXGroup;
 			children = (
-				7B7693E12B7B07AD0007A89F /* DSTransparentListView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -1243,7 +1240,6 @@
 				9A8FD5F02B90D97500794736 /* FeedViewController.swift in Sources */,
 				42F9324629FBF7D20072DDC1 /* TitleCellViewModel.swift in Sources */,
 				7BE1992D2B16DB2D008C9FAC /* DocumentsCollectionModuleFactory.swift in Sources */,
-				7B7693E22B7B07AD0007A89F /* DSTransparentListView.swift in Sources */,
 				7B7693D32B7B03250007A89F /* DocumentReorderingCell.swift in Sources */,
 				7B7693C92B7AE63E0007A89F /* SharingDocsAPI.swift in Sources */,
 				7BE199412B16DB2D008C9FAC /* DocumentReorderingService.swift in Sources */,
