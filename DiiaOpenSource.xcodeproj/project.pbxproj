@@ -44,7 +44,6 @@
 		42F923D529FBF61B0072DDC1 /* UIScreen+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922FF29FBF61B0072DDC1 /* UIScreen+Brightness.swift */; };
 		42F923F029FBF61B0072DDC1 /* MainDeeplinkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9231D29FBF61B0072DDC1 /* MainDeeplinkRouter.swift */; };
 		42F923FA29FBF61B0072DDC1 /* DeepLinkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9232729FBF61B0072DDC1 /* DeepLinkRoute.swift */; };
-		42F923FB29FBF61B0072DDC1 /* DeepLinkParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9232829FBF61B0072DDC1 /* DeepLinkParameter.swift */; };
 		42F923FC29FBF61B0072DDC1 /* DeepLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9232929FBF61B0072DDC1 /* DeepLinkManager.swift */; };
 		42F923FD29FBF61B0072DDC1 /* DeeplinksRoutersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9232A29FBF61B0072DDC1 /* DeeplinksRoutersList.swift */; };
 		42F9243929FBF61B0072DDC1 /* TitledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9236F29FBF61B0072DDC1 /* TitledTextField.swift */; };
@@ -201,7 +200,6 @@
 		42F922FF29FBF61B0072DDC1 /* UIScreen+Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Brightness.swift"; sourceTree = "<group>"; };
 		42F9231D29FBF61B0072DDC1 /* MainDeeplinkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDeeplinkRouter.swift; sourceTree = "<group>"; };
 		42F9232729FBF61B0072DDC1 /* DeepLinkRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkRoute.swift; sourceTree = "<group>"; };
-		42F9232829FBF61B0072DDC1 /* DeepLinkParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkParameter.swift; sourceTree = "<group>"; };
 		42F9232929FBF61B0072DDC1 /* DeepLinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkManager.swift; sourceTree = "<group>"; };
 		42F9232A29FBF61B0072DDC1 /* DeeplinksRoutersList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinksRoutersList.swift; sourceTree = "<group>"; };
 		42F9236F29FBF61B0072DDC1 /* TitledTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledTextField.swift; sourceTree = "<group>"; };
@@ -481,7 +479,6 @@
 			children = (
 				42F9231529FBF61B0072DDC1 /* Routers */,
 				42F9232729FBF61B0072DDC1 /* DeepLinkRoute.swift */,
-				42F9232829FBF61B0072DDC1 /* DeepLinkParameter.swift */,
 				42F9232929FBF61B0072DDC1 /* DeepLinkManager.swift */,
 				42F9232A29FBF61B0072DDC1 /* DeeplinksRoutersList.swift */,
 			);
@@ -1253,7 +1250,6 @@
 				7BE199422B16DB2D008C9FAC /* DocumentReorderingAPIClient.swift in Sources */,
 				7B7693E52B7B090A0007A89F /* ActionSheetV2ViewController.swift in Sources */,
 				42F9244A29FBF61B0072DDC1 /* MobileUIDGenerator.swift in Sources */,
-				42F923FB29FBF61B0072DDC1 /* DeepLinkParameter.swift in Sources */,
 				42F9322E29FBF7D20072DDC1 /* SettingsModule.swift in Sources */,
 				7BE199502B16E543008C9FAC /* DocumentsResponse.swift in Sources */,
 				3329AF6B2B29F944004B8517 /* UserAuthorizationErrorRouter.swift in Sources */,
