@@ -12,7 +12,6 @@ final class ProlongStartPresenter {
     
     // MARK: - Properties
     unowned var view: ProlongStartView
-    private let apiClient: AuthorizationApiClient
     private let completionHandler: Callback
     
     private var didRetry = false
@@ -22,11 +21,9 @@ final class ProlongStartPresenter {
     // MARK: - Init
     init(
         view: ProlongStartView,
-        apiClient: AuthorizationApiClient,
         completionHandler: @escaping Callback
     ) {
         self.view = view
-        self.apiClient = apiClient
         self.completionHandler = completionHandler
     }
     
