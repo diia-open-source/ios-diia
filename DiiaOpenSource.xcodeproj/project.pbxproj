@@ -164,7 +164,6 @@
 		7BE199412B16DB2D008C9FAC /* DocumentReorderingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199232B16DB2D008C9FAC /* DocumentReorderingService.swift */; };
 		7BE199422B16DB2D008C9FAC /* DocumentReorderingAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199242B16DB2D008C9FAC /* DocumentReorderingAPIClient.swift */; };
 		7BE199432B16DB2D008C9FAC /* DocumentReorderingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199252B16DB2D008C9FAC /* DocumentReorderingAPI.swift */; };
-		7BE1994B2B16E310008C9FAC /* DashBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1994A2B16E310008C9FAC /* DashBorderedView.swift */; };
 		7BE1994E2B16E393008C9FAC /* DocType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1994D2B16E393008C9FAC /* DocType.swift */; };
 		7BE199502B16E543008C9FAC /* DocumentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1994F2B16E543008C9FAC /* DocumentsResponse.swift */; };
 		7BE199522B16E5E1008C9FAC /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199512B16E5E1008C9FAC /* ServicesProvider.swift */; };
@@ -324,7 +323,6 @@
 		7BE199232B16DB2D008C9FAC /* DocumentReorderingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentReorderingService.swift; sourceTree = "<group>"; };
 		7BE199242B16DB2D008C9FAC /* DocumentReorderingAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentReorderingAPIClient.swift; sourceTree = "<group>"; };
 		7BE199252B16DB2D008C9FAC /* DocumentReorderingAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentReorderingAPI.swift; sourceTree = "<group>"; };
-		7BE1994A2B16E310008C9FAC /* DashBorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBorderedView.swift; sourceTree = "<group>"; };
 		7BE1994D2B16E393008C9FAC /* DocType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocType.swift; sourceTree = "<group>"; };
 		7BE1994F2B16E543008C9FAC /* DocumentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsResponse.swift; sourceTree = "<group>"; };
 		7BE199512B16E5E1008C9FAC /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
@@ -512,7 +510,6 @@
 			children = (
 				7B7693C32B7AE0090007A89F /* DesignSystem */,
 				42F9236F29FBF61B0072DDC1 /* TitledTextField.swift */,
-				7BE1994A2B16E310008C9FAC /* DashBorderedView.swift */,
 				7B7693E82B7C85A60007A89F /* BorderedCheckmarksView.swift */,
 			);
 			path = Views;
@@ -1321,7 +1318,6 @@
 				7BE199402B16DB2D008C9FAC /* DocumentsReorderingViewController.swift in Sources */,
 				42F9244729FBF61B0072DDC1 /* StoreHelper.swift in Sources */,
 				42F9245D29FBF61B0072DDC1 /* JWTParser.swift in Sources */,
-				7BE1994B2B16E310008C9FAC /* DashBorderedView.swift in Sources */,
 				7B7693C62B7AE0380007A89F /* DSImageNameResolver.swift in Sources */,
 				42F9339C29FBF7D30072DDC1 /* MainTabAction.swift in Sources */,
 				42F9245329FBF61B0072DDC1 /* MigrationService.swift in Sources */,
