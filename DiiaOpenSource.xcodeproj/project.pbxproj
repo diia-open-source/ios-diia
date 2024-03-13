@@ -48,7 +48,6 @@
 		42F923FB29FBF61B0072DDC1 /* DeepLinkParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9232829FBF61B0072DDC1 /* DeepLinkParameter.swift */; };
 		42F923FC29FBF61B0072DDC1 /* DeepLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9232929FBF61B0072DDC1 /* DeepLinkManager.swift */; };
 		42F923FD29FBF61B0072DDC1 /* DeeplinksRoutersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9232A29FBF61B0072DDC1 /* DeeplinksRoutersList.swift */; };
-		42F9242E29FBF61B0072DDC1 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9236229FBF61B0072DDC1 /* RoundButton.swift */; };
 		42F9243929FBF61B0072DDC1 /* TitledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9236F29FBF61B0072DDC1 /* TitledTextField.swift */; };
 		42F9244729FBF61B0072DDC1 /* StoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9237F29FBF61B0072DDC1 /* StoreHelper.swift */; };
 		42F9244A29FBF61B0072DDC1 /* MobileUIDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9238229FBF61B0072DDC1 /* MobileUIDGenerator.swift */; };
@@ -211,7 +210,6 @@
 		42F9232829FBF61B0072DDC1 /* DeepLinkParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkParameter.swift; sourceTree = "<group>"; };
 		42F9232929FBF61B0072DDC1 /* DeepLinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkManager.swift; sourceTree = "<group>"; };
 		42F9232A29FBF61B0072DDC1 /* DeeplinksRoutersList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinksRoutersList.swift; sourceTree = "<group>"; };
-		42F9236229FBF61B0072DDC1 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		42F9236F29FBF61B0072DDC1 /* TitledTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledTextField.swift; sourceTree = "<group>"; };
 		42F9237F29FBF61B0072DDC1 /* StoreHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreHelper.swift; sourceTree = "<group>"; };
 		42F9238229FBF61B0072DDC1 /* MobileUIDGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileUIDGenerator.swift; sourceTree = "<group>"; };
@@ -513,7 +511,6 @@
 			isa = PBXGroup;
 			children = (
 				7B7693C32B7AE0090007A89F /* DesignSystem */,
-				42F9236229FBF61B0072DDC1 /* RoundButton.swift */,
 				42F9236F29FBF61B0072DDC1 /* TitledTextField.swift */,
 				7BE1994A2B16E310008C9FAC /* DashBorderedView.swift */,
 				7B7693E82B7C85A60007A89F /* BorderedCheckmarksView.swift */,
@@ -1237,7 +1234,6 @@
 				42F9337129FBF7D30072DDC1 /* StartAuthorizationViewController.swift in Sources */,
 				42F931DE29FBF7D20072DDC1 /* SplashScreenModule.swift in Sources */,
 				7B7693CA2B7AE63E0007A89F /* SharingDocsAPIClient.swift in Sources */,
-				42F9242E29FBF61B0072DDC1 /* RoundButton.swift in Sources */,
 				42F931DF29FBF7D20072DDC1 /* SplashScreenViewController.swift in Sources */,
 				42F9336E29FBF7D30072DDC1 /* StartAuthorizationModule.swift in Sources */,
 				42F9325629FBF7D20072DDC1 /* SettingsManager.swift in Sources */,
