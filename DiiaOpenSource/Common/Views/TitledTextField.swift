@@ -747,14 +747,6 @@ open class TitledTextField: UITextField {
             createBorderView()
         }
     }
-    
-    // MARK: - Helper Methods
-    func topInsetToBorder() -> CGFloat {
-        if isBordered {
-            return selectedLineHeight + titleFont.lineHeight/2
-        }
-        return 0
-    }
 }
 
 // swiftlint:enable all
