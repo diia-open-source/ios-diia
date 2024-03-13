@@ -40,7 +40,6 @@
 		42F922C429FBF4C10072DDC1 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922BF29FBF4C10072DDC1 /* AppRouter.swift */; };
 		42F922C529FBF4C10072DDC1 /* EnvironmentVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922C029FBF4C10072DDC1 /* EnvironmentVars.swift */; };
 		42F922C729FBF5D30072DDC1 /* NetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922C629FBF5D30072DDC1 /* NetworkConfigurator.swift */; };
-		42F923CB29FBF61B0072DDC1 /* UIView+CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922F529FBF61B0072DDC1 /* UIView+CustomCorners.swift */; };
 		42F923CF29FBF61B0072DDC1 /* UIView+GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922F929FBF61B0072DDC1 /* UIView+GradientAnimation.swift */; };
 		42F923D529FBF61B0072DDC1 /* UIScreen+Brightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922FF29FBF61B0072DDC1 /* UIScreen+Brightness.swift */; };
 		42F923F029FBF61B0072DDC1 /* MainDeeplinkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F9231D29FBF61B0072DDC1 /* MainDeeplinkRouter.swift */; };
@@ -201,7 +200,6 @@
 		42F922BF29FBF4C10072DDC1 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		42F922C029FBF4C10072DDC1 /* EnvironmentVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentVars.swift; sourceTree = "<group>"; };
 		42F922C629FBF5D30072DDC1 /* NetworkConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigurator.swift; sourceTree = "<group>"; };
-		42F922F529FBF61B0072DDC1 /* UIView+CustomCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CustomCorners.swift"; sourceTree = "<group>"; };
 		42F922F929FBF61B0072DDC1 /* UIView+GradientAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GradientAnimation.swift"; sourceTree = "<group>"; };
 		42F922FF29FBF61B0072DDC1 /* UIScreen+Brightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Brightness.swift"; sourceTree = "<group>"; };
 		42F9231D29FBF61B0072DDC1 /* MainDeeplinkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDeeplinkRouter.swift; sourceTree = "<group>"; };
@@ -479,7 +477,6 @@
 		42F922F129FBF61B0072DDC1 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				42F922F529FBF61B0072DDC1 /* UIView+CustomCorners.swift */,
 				42F922F929FBF61B0072DDC1 /* UIView+GradientAnimation.swift */,
 			);
 			path = UIView;
@@ -1289,7 +1286,6 @@
 				42F922C729FBF5D30072DDC1 /* NetworkConfigurator.swift in Sources */,
 				7B7693E92B7C85A60007A89F /* BorderedCheckmarksView.swift in Sources */,
 				42F9324E29FBF7D20072DDC1 /* TitleTableCell.swift in Sources */,
-				42F923CB29FBF61B0072DDC1 /* UIView+CustomCorners.swift in Sources */,
 				7BE1994E2B16E393008C9FAC /* DocType.swift in Sources */,
 				7BE199372B16DB2D008C9FAC /* DocumentsReservePhotoService.swift in Sources */,
 				7BE199302B16DB2D008C9FAC /* DocumentsAPI.swift in Sources */,
