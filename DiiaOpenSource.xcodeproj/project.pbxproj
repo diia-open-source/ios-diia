@@ -165,7 +165,6 @@
 		7BE199502B16E543008C9FAC /* DocumentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1994F2B16E543008C9FAC /* DocumentsResponse.swift */; };
 		7BE199522B16E5E1008C9FAC /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199512B16E5E1008C9FAC /* ServicesProvider.swift */; };
 		7BE199642B17C230008C9FAC /* FaqOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199632B17C230008C9FAC /* FaqOpener.swift */; };
-		7BE199672B17C319008C9FAC /* DriverReplacementStubModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199662B17C319008C9FAC /* DriverReplacementStubModule.swift */; };
 		9487B53F2B76594800571A1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9487B53E2B76594800571A1D /* Alamofire */; };
 		9487B5422B765B8600571A1D /* ReactiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9487B5412B765B8600571A1D /* ReactiveKit */; };
 		9A8FD5F02B90D97500794736 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FD5EC2B90D97500794736 /* FeedViewController.swift */; };
@@ -321,7 +320,6 @@
 		7BE1994F2B16E543008C9FAC /* DocumentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsResponse.swift; sourceTree = "<group>"; };
 		7BE199512B16E5E1008C9FAC /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
 		7BE199632B17C230008C9FAC /* FaqOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqOpener.swift; sourceTree = "<group>"; };
-		7BE199662B17C319008C9FAC /* DriverReplacementStubModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverReplacementStubModule.swift; sourceTree = "<group>"; };
 		9A8FD5EC2B90D97500794736 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		9A8FD5ED2B90D97500794736 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		9A8FD5EE2B90D97500794736 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
@@ -1050,7 +1048,6 @@
 			children = (
 				7BE199132B16DB2D008C9FAC /* AddDocumentsActionProvider.swift */,
 				7BE199632B17C230008C9FAC /* FaqOpener.swift */,
-				7BE199662B17C319008C9FAC /* DriverReplacementStubModule.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -1272,7 +1269,6 @@
 				7BE199342B16DB2D008C9FAC /* AddDocumentsActionProvider.swift in Sources */,
 				3329AF7B2B2A1F1F004B8517 /* EnterPinCodeViewModel+Extension.swift in Sources */,
 				7BE198B42B148389008C9FAC /* PublicServiceCoreNetworkContext+Extension.swift in Sources */,
-				7BE199672B17C319008C9FAC /* DriverReplacementStubModule.swift in Sources */,
 				42F923CF29FBF61B0072DDC1 /* UIView+GradientAnimation.swift in Sources */,
 				42F923F029FBF61B0072DDC1 /* MainDeeplinkRouter.swift in Sources */,
 				42F922C729FBF5D30072DDC1 /* NetworkConfigurator.swift in Sources */,
