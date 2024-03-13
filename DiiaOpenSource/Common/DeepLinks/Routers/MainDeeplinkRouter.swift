@@ -12,7 +12,7 @@ struct MainDeeplinkRouteBuilder: DeepLinkRouteBuilder {
         return true
     }
     
-    func create(pathString: String, queryParams: [DeeplinkQueryParameter: String]) -> RouterProtocol? {
+    func create(pathString: String) -> RouterProtocol? {
         if canCreateRoute(with: pathString) { return MainDeeplinkRoute() }
         return nil
     }
