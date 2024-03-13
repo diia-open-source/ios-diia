@@ -7,13 +7,11 @@ protocol SplashScreenAction: BasePresenter {
 }
 
 final class SplashScreenPresenter: SplashScreenAction {
-    unowned var view: SplashScreenView
     
     private let onFinish: Callback
     
-    init(view: SplashScreenView, onFinish: @escaping Callback) {
+    init(onFinish: @escaping Callback) {
         self.onFinish = onFinish
-        self.view = view
     }
     
     func didFinishAnimations() {
