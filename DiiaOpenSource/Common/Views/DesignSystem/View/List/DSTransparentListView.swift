@@ -13,18 +13,6 @@ class DSTransparentListView: BaseCodeView {
         stackView.fillSuperview(padding: Constants.stackInsets)
     }
     
-    // MARK: - Public Methods
-    func configure(viewModel: DSListViewModel) {
-        stackView.safelyRemoveArrangedSubviews()
-        if let title = viewModel.title {
-            addTitleView(title)
-            addSeparator()
-        }
-        for item in viewModel.items {
-            addListItemView(with: item)
-        }
-    }
-    
     // MARK: - Private Methods
     private func addListItemView(with viewModel: DSListItemViewModel) {
         let itemView = DSListItemView()
