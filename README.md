@@ -69,7 +69,7 @@ SCHEME = DiiaDev
 - Driver License document
 
 ### Public Services
-- Presenting list of avalable public services
+- Presenting list of available public services
 - Criminal Record Extract service
 
 ### Settings Menu
