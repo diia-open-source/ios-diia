@@ -13,7 +13,6 @@ protocol MainTabRoutingProtocol: UIViewController {
 }
 
 protocol MainTabBarView: BaseView {
-    func updateView()
     func setupCurrentController(_ viewController: UIViewController)
     func setupSelectedItem(index: Int)
     func updateTopColor(tabColor: TabBarColor)
@@ -112,10 +111,6 @@ extension MainTabBarViewController: MainTabBarView {
                               selectedIndex: index)
             }
         }
-    }
-    
-    func updateView() {
-        collectionView.reloadData()
     }
     
     func updateTopColor(tabColor: TabBarColor) {

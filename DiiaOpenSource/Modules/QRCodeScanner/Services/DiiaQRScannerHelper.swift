@@ -32,15 +32,8 @@ class DiiaQRScannerHelper: NSObject, QRScannerDelegate {
             return .error(message: R.Strings.qr_incorrect_code.localized())
         }
         
-        var queryParams: [DeeplinkQueryParameter: String] = [:]
-        components.queryItems?.forEach({ (queryItem) in
-            if let linkType = DeeplinkQueryParameter(rawValue: queryItem.name) {
-                queryParams[linkType] = queryItem.value
-            }
-        })
-        
         guard let routerFabric = DeeplinksRoutersList.userRouters.first(where: { $0.canCreateRoute(with: components.path) }),
-              let deeplinkRouter = routerFabric.create(pathString: components.path, queryParams: queryParams)
+              let deeplinkRouter = routerFabric.create(pathString: components.path)
         else {
             return .error(message: R.Strings.qr_incorrect_code.localized())
         }

@@ -10,7 +10,7 @@ final class ProlongStartModule: BaseModule {
     init(completionHandler: @escaping Callback) {
         view = ProlongStartViewController.storyboardInstantiate()
         view.modalPresentationStyle = .fullScreen
-        presenter = ProlongStartPresenter(view: view, apiClient: AuthorizationApiClient.create(), completionHandler: completionHandler)
+        presenter = ProlongStartPresenter(view: view, completionHandler: completionHandler)
         view.presenter = presenter
     }
 

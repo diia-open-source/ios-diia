@@ -8,7 +8,7 @@ final class SplashScreenModule: BaseModule {
     
     init(onFinish: @escaping Callback) {
         view = SplashScreenViewController.storyboardInstantiate()
-        presenter = SplashScreenPresenter(view: view, onFinish: onFinish)
+        presenter = SplashScreenPresenter(onFinish: onFinish)
         view.presenter = presenter
     }
 

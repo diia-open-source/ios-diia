@@ -39,15 +39,6 @@ enum DocType: String, Codable, CaseIterable {
         case .taxpayerСard: return ""
         }
     }
-
-    func storingKey() -> StoringKey? {
-        switch self {
-        case .driverLicense:
-            return .driverLicense
-        case .taxpayerСard:
-            return nil
-        }
-    }
 }
 
 extension DocType: DocumentAttributesProtocol {

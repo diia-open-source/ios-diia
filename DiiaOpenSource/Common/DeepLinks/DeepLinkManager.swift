@@ -19,15 +19,8 @@ class DeepLinkManager {
         
         components.queryItems?.forEach { log($0) }
         
-        var queryParams: [DeeplinkQueryParameter: String] = [:]
-        components.queryItems?.forEach({ (queryItem) in
-            if let linkType = DeeplinkQueryParameter(rawValue: queryItem.name) {
-                queryParams[linkType] = queryItem.value
-            }
-        })
-        
         guard let routerBuilder = DeeplinksRoutersList.userRouters.first(where: { $0.canCreateRoute(with: components.path) }),
-              let deeplinkRouter = routerBuilder.create(pathString: components.path, queryParams: queryParams)
+              let deeplinkRouter = routerBuilder.create(pathString: components.path)
         else {
             return false
         }
