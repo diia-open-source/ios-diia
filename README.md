@@ -1,9 +1,9 @@
 # Diia
 
 
-This repository provides an overview over the flagship product [**Diia**](https://diia.gov.ua/) developed by the [**Ministry of Digital Transformation of Ukraine**](https://thedigital.gov.ua/).
+This repository provides an overview of the flagship product [**Diia**](https://diia.gov.ua/) developed by the [**Ministry of Digital Transformation of Ukraine**](https://thedigital.gov.ua/).
  
-**Diia** is an app with access to citizen’s digital documents and government services.
+**Diia** is an app with access to citizens’ digital documents and government services.
  
 The application was created so that Ukrainians could interact with the state in a few clicks, without spending their time on queues and paperwork - **Diia** open source application will help countries, companies and communities build a foundation for long-term relationships. At the heart of these relations are openness, efficiency and humanity.
  
@@ -35,11 +35,11 @@ Build and run the project on iOS device or simulator.
 
 ## How to test
 
-To get mock user for testing please refer to the [TESTING.md](https://github.com/diia-open-source/diia-setup-howto/blob/main/TESTING.md) file for details.
+To get a mock user for testing please refer to the [TESTING.md](https://github.com/diia-open-source/diia-setup-howto/blob/main/TESTING.md) file for details.
 
 ## Configuration Details
 
-For configuring project we are using `.xcconfig` settings files:
+For configuring the project we are using `.xcconfig` settings files:
 
 __Development Environment (DiiaDev.xcconfig)__
 ```text
@@ -62,14 +62,14 @@ SCHEME = DiiaDev
 ### Authorization
 - Presenting authentication available methods
 - Bank-ID authorization method
-- PinCode. Enteing, changing pincode plust enabling the using biometry option
+- PinCode. Entering, changing pincode plus enabling the using biometry option
   
 ### Documents
-- Presenting collection of available documents with the ability to change the order
+- Presenting a collection of available documents with the ability to change the order
 - Driver License document
 
 ### Public Services
-- Presenting list of available public services
+- Presenting a list of available public services
 - Criminal Record Extract service
 
 ### Settings Menu
@@ -77,17 +77,17 @@ It serves as the go-to hub for personalized control and management within the ap
 
 ## Dependencies
 
-Almost all features and core components such as network core and UI library are shipped as separate SPM packages.
+Almost all features and core components, such as the network core and UI library, are shipped as separate SPM packages.
 
 ### 1st party
 
-* [DiiaMVPModule](https://github.com/diia-open-source/ios-mvpmodule.git): Model-View-Presenter basic protocols
-* [DiiaNetwork](https://github.com/diia-open-source/ios-network.git): The foundational network layer
+* [DiiaMVPModule](https://github.com/diia-open-source/ios-mvpmodule.git): Model-View-Presenter basic protocols.
+* [DiiaNetwork](https://github.com/diia-open-source/ios-network.git): The foundational network layer.
 * [DiiaUIComponents](https://github.com/diia-open-source/ios-uicomponents.git): Basic UI components and primitives.
 * [DiiaCommonTypes](https://github.com/diia-open-source/ios-commontypes.git): Types (classes, strucutres, protocols) that have to be shared amond several packages.
 * [DiiaCommonServices](https://github.com/diia-open-source/ios-commonservices.git): Foundational utilities and modules providing essential support for Diia on iOS.
 * [DiiaAuthorization](https://github.com/diia-open-source/ios-authorization.git): Core of authorization, authorization methods and pin code.
-* [DiiaDocuments](https://github.com/diia-open-source/ios-documents.git): Documents core functionality and particular documents
+* [DiiaDocuments](https://github.com/diia-open-source/ios-documents.git): Documents core functionality and particular documents.
 * [DiiaPublicServices](https://github.com/diia-open-source/ios-publicservices.git): Public services core functionality and particular public services.
 
 ### 3rd party
@@ -97,7 +97,7 @@ Almost all features and core components such as network core and UI library are 
 
 ## How to contribute
 
-The Diia project welcomes contributions into this solution; please refer to the [CONTRIBUTING](./CONTRIBUTING.md) file for details
+The Diia project welcomes contributions to this solution; please refer to the [CONTRIBUTING](./CONTRIBUTING.md) file for details
 
 ## Licensing
 
