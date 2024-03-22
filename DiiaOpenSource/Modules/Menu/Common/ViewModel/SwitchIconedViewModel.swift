@@ -1,8 +1,9 @@
 import Foundation
+import UIKit
 
 class SwitchIconedViewModel: NSObject {
     let title: String
-    let iconName: String
+    let icon: UIImage
     @objc dynamic var isOn: Bool {
         didSet {
             onSwitch(isOn)
@@ -11,11 +12,11 @@ class SwitchIconedViewModel: NSObject {
     private let onSwitch: (Bool) -> Void
     
     init(title: String,
-         iconName: String,
+         icon: UIImage,
          isOn: Bool,
          onSwitch: @escaping (Bool) -> Void) {
         self.title = title
-        self.iconName = iconName
+        self.icon = icon
         self.isOn = isOn
         self.onSwitch = onSwitch
     }

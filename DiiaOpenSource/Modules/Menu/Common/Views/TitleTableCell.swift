@@ -39,7 +39,7 @@ final class TitleTableCell: BaseTableNibCell, NibLoadable {
     // MARK: - Configuration
     func configure(viewModel: TitleCellViewModel) {
         titleLabel.text = viewModel.title
-        iconImageView.image = UIImage(named: viewModel.iconName)
+        iconImageView.image = viewModel.icon
         onClickAction = viewModel.action
     }
     

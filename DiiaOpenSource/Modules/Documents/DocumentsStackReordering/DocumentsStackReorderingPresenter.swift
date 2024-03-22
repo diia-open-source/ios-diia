@@ -45,7 +45,7 @@ final class DocumentsStackReorderingPresenter: DocumentsStackReorderingAction {
             documentItem: DocReorderingCellInfoViewModel(
                 title: selectedDoc.orderConfigurations?.label ?? "",
                 subtitle: selectedDoc.orderConfigurations?.description,
-                rightIcon: R.image.ds_drag.image)
+                rightIcon: UIImage.dsDrag)
         )
     }
     

@@ -16,8 +16,8 @@ extension BiometryRequestViewModel {
             : R.Strings.authorization_biometry_touch_id_description.localized()
         
         let icon = biometryType == .face
-            ? R.image.faceId.image
-            : R.image.fingerprint.image
+            ? UIImage.faceId
+            : UIImage.fingerprint
         
         return BiometryRequestViewModel(
             title: title,

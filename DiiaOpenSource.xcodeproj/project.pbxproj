@@ -108,7 +108,6 @@
 		42F93A0C29FBF7D90072DDC1 /* e-UkraineHead-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42F930F229FBF7D10072DDC1 /* e-UkraineHead-Light.otf */; };
 		42F93A0D29FBF7D90072DDC1 /* e-Ukraine-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42F930F329FBF7D10072DDC1 /* e-Ukraine-Regular.otf */; };
 		42F93A2129FFB2930072DDC1 /* R+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F93A2029FFB2930072DDC1 /* R+String.swift */; };
-		42F93A2329FFB88F0072DDC1 /* R+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F93A2229FFB88F0072DDC1 /* R+Images.swift */; };
 		42F93A3729FFCF530072DDC1 /* ProlongStartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F93A3229FFCF530072DDC1 /* ProlongStartViewController.storyboard */; };
 		42F93A3829FFCF530072DDC1 /* ProlongStartModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F93A3329FFCF530072DDC1 /* ProlongStartModule.swift */; };
 		42F93A3929FFCF530072DDC1 /* ProlongStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F93A3429FFCF530072DDC1 /* ProlongStartViewController.swift */; };
@@ -274,7 +273,6 @@
 		42F930F329FBF7D10072DDC1 /* e-Ukraine-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "e-Ukraine-Regular.otf"; sourceTree = "<group>"; };
 		42F9310229FBF7D10072DDC1 /* DiiaDev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DiiaDev.xcconfig; sourceTree = "<group>"; };
 		42F93A2029FFB2930072DDC1 /* R+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+String.swift"; sourceTree = "<group>"; };
-		42F93A2229FFB88F0072DDC1 /* R+Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+Images.swift"; sourceTree = "<group>"; };
 		42F93A3229FFCF530072DDC1 /* ProlongStartViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProlongStartViewController.storyboard; sourceTree = "<group>"; };
 		42F93A3329FFCF530072DDC1 /* ProlongStartModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProlongStartModule.swift; sourceTree = "<group>"; };
 		42F93A3429FFCF530072DDC1 /* ProlongStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProlongStartViewController.swift; sourceTree = "<group>"; };
@@ -777,7 +775,6 @@
 				42F930EC29FBF7D10072DDC1 /* Fonts */,
 				42F930F429FBF7D10072DDC1 /* Animations */,
 				42F93A2029FFB2930072DDC1 /* R+String.swift */,
-				42F93A2229FFB88F0072DDC1 /* R+Images.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1349,7 +1346,6 @@
 				42F923D529FBF61B0072DDC1 /* UIScreen+Brightness.swift in Sources */,
 				42F93A5C2A022AA90072DDC1 /* Formatter+Extension.swift in Sources */,
 				42F9246F29FBF79D0072DDC1 /* CommonService+Defaults.swift in Sources */,
-				42F93A2329FFB88F0072DDC1 /* R+Images.swift in Sources */,
 				7B0AACF52B8C60D8007E00B8 /* AnalyticsProvider.swift in Sources */,
 				42F922C529FBF4C10072DDC1 /* EnvironmentVars.swift in Sources */,
 				7BE1992F2B16DB2D008C9FAC /* DocumentsAPIClient.swift in Sources */,
@@ -1387,6 +1383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1447,6 +1444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
