@@ -36,7 +36,7 @@ class ActionSheetV2ViewController: UIViewController, ChildSubcontroller {
         }
     }
     
-    var lastAction: Action = Action(title: nil, iconName: R.image.clear.name, callback: {}) {
+    var lastAction: Action = Action(title: nil, image: UIImage.clear, callback: {}) {
         didSet {
             updateViews()
         }
