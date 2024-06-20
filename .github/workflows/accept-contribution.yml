@@ -1,0 +1,73 @@
+name: Accept contribution
+
+on:
+  pull_request:
+    types:
+      - "closed"
+    branches:
+      - "main"
+    paths-ignore:
+      - '.github/**'
+
+jobs:
+  accept-contribution:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Get latest tag
+        id: generate_tag
+        run: |
+          latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
+          if [[ $latest_tag =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+            major=${BASH_REMATCH[1]}
+            minor=${BASH_REMATCH[2]}
+            patch=${BASH_REMATCH[3]}
+            new_patch=$((patch + 1))
+            new_tag="${major}.${minor}.${new_patch}"
+          else
+            echo "Error: Tag format not recognized."
+            exit 1
+          fi
+          echo "SYNC_TAG=$new_tag" >> "$GITHUB_ENV"
+                
+      - name: Publish changes
+        env:
+          GITLAB_TOKEN:  ${{ secrets.GITLAB_TOKEN }}
+          PUBLISH_GROUP: ${{ secrets.PUBLISH_GROUP }}
+          TARGET_PROJECT: ${{ secrets.TARGET_PROJECT }}
+          PUBLISH_BRANCH: main
+          CI_API_URL: ${{ secrets.CI_API_URL }}
+        run: |
+          git config --global user.name "$(git show -s --format='%an')"
+          git config --global user.email "$(git show -s --format='%ae')"        
+          mapfile -t CHANGED_FILES < <(git diff --name-only HEAD^ HEAD ':!*.md' ':!.github/**')
+
+          git clone https://gitlab-ci-token:$GITLAB_TOKEN@$CI_API_URL/"$PUBLISH_GROUP/$TARGET_PROJECT" --branch "$PUBLISH_BRANCH"
+          for file in "${CHANGED_FILES[@]}"; do
+            echo $file
+            if [ -f "$file" ] || [-d "$file" ]; then
+              cp --parents $file "$TARGET_PROJECT/"
+              else
+              rm -rf "$TARGET_PROJECT/$file"
+            fi
+          done
+          cd "$TARGET_PROJECT" || exit
+          git checkout -b oss-contributions/"$SYNC_TAG"
+          git commit -am "accepting oss contribution $SYNC_TAG" 
+          git push -u origin oss-contributions/"$SYNC_TAG"
+
+          TARGET_PROJECT_ID=$(curl --fail --request GET --header "PRIVATE-TOKEN:$GITLAB_TOKEN" \
+          https://$CI_API_URL/api/v4/projects/"$(echo "$PUBLISH_GROUP/$TARGET_PROJECT" | sed 's/\//%2F/g')" | jq -r '.id')
+
+          curl --fail --request POST --header "PRIVATE-TOKEN:$GITLAB_TOKEN" \
+          --data-urlencode "source_branch=oss-contributions/$SYNC_TAG" \
+          --data-urlencode "target_branch=$PUBLISH_BRANCH" \
+          --data-urlencode "title=ci: release $SYNC_TAG" \
+          --data-urlencode "squash=true" \
+          --data-urlencode "remove_source_branch=true" \
+          "https://$CI_API_URL/api/v4/projects/$TARGET_PROJECT_ID/merge_requests"
