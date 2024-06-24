@@ -42,7 +42,7 @@ private extension MenuPresenter {
     func messagesSection() -> [DSListItemViewModel] {
         return [
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuNotifications.image,
+                leftSmallIcon: UIImage.menuNotifications,
                 title: R.Strings.menu_notifications.localized(),
                 onClick: { })
         ]
@@ -51,11 +51,11 @@ private extension MenuPresenter {
     func diiaIDSections() -> [DSListItemViewModel] {
         return [
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuDiiaID.image,
+                leftSmallIcon: UIImage.menuDiiaID,
                 title: R.Strings.menu_diia_id.localized(),
                 onClick: { }),
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuDiiaIDHistory.image,
+                leftSmallIcon: UIImage.menuDiiaIDHistory,
                 title: R.Strings.menu_diia_id_history.localized(),
                 onClick: { })
         ]
@@ -64,17 +64,17 @@ private extension MenuPresenter {
     func generalSections() -> [DSListItemViewModel] {
         return [
             DSListItemViewModel(
-                leftSmallIcon: R.image.settings.image,
+                leftSmallIcon: UIImage.settings,
                 title: R.Strings.menu_title_settings.localized(),
                 onClick: { [weak self] in
                     self?.view.open(module: SettingsModule())
                 }),
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuUpdate.image,
+                leftSmallIcon: UIImage.menuUpdate,
                 title: R.Strings.menu_update.localized(),
                 onClick: { }),
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuActiveSessions.image,
+                leftSmallIcon: UIImage.menuActiveSessions,
                 title: R.Strings.menu_active_sessions.localized(),
                 onClick: { })
         ]
@@ -83,14 +83,14 @@ private extension MenuPresenter {
     func communicationSections() -> [DSListItemViewModel] {
         return [
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuSupport.image,
+                leftSmallIcon: UIImage.menuSupport,
                 title: R.Strings.menu_support.localized(),
                 onClick: { [weak self] in
                     let module = ActionSheetV2Module(actions: CommunicationHelper.getCommunicationsActions())
                     self?.view.showChild(module: module)
                 }),
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuCopyUID.image,
+                leftSmallIcon: UIImage.menuCopyUID,
                 title: R.Strings.menu_copy_uid.localized(),
                 onClick: { [weak self] in
                     UIPasteboard.general.string = AppConstants.App.mobileUID
@@ -99,7 +99,7 @@ private extension MenuPresenter {
                     self?.view.showSuccessMessage(message: msg)
                 }),
             DSListItemViewModel(
-                leftSmallIcon: R.image.menuFaq.image,
+                leftSmallIcon: UIImage.menuFaq,
                 title: R.Strings.menu_faq.localized(),
                 onClick: { })
         ]

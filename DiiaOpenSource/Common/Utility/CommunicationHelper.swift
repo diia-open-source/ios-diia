@@ -10,17 +10,17 @@ class CommunicationHelper {
 
     static func getCommunicationsActions() -> [Action] {
         return [
-            Action(title: Constants.Messengers.telegram, iconName: R.image.telegram.name, callback: {
+            Action(title: Constants.Messengers.telegram, image: UIImage.telegram, callback: {
                 if CommunicationHelper.telegram(botName: CommunicationHelper.telegramBotName) == false {
                     showMessengerNotInstalledAlert(Constants.Messengers.telegram)
                 }
             }),
-            Action(title: Constants.Messengers.facebook, iconName: R.image.facebookMessenger.name, callback: {
+            Action(title: Constants.Messengers.facebook, image: UIImage.facebookMessenger, callback: {
                 if CommunicationHelper.url(urlString: CommunicationHelper.facebookSupportUrl, linkType: .facebook) == false {
                     showMessengerNotInstalledAlert(Constants.Messengers.facebook)
                 }
             }),
-            Action(title: Constants.Messengers.viber, iconName: R.image.viber.name, callback: {
+            Action(title: Constants.Messengers.viber, image: UIImage.viber, callback: {
                 if CommunicationHelper.viber(chatURI: CommunicationHelper.viberBotName) == false {
                     showMessengerNotInstalledAlert(Constants.Messengers.viber)
                 }
