@@ -25,7 +25,7 @@ struct PSCriminalRecordExtractRoute: RouterProtocol {
     }
     
     func route(in view: BaseView) {
-        let baseCMP = BaseContextMenuProvider(publicService: .criminalRecordCertificate, items: contextMenuItems)
+        let baseCMP = BaseContextMenuProvider(items: contextMenuItems)
         let config: PSCriminalRecordExtractConfiguration = .init(ratingServiceOpener: RatingServiceOpener(),
                                                                  networkingContext: .create(),
                                                                  urlOpener: URLOpenerImpl())

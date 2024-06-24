@@ -13,13 +13,6 @@ struct PublicServiceCategoriesListModuleFactory {
     }
 }
 
-struct PublicServiceOpenerFactory {
-    static func create() -> PublicServiceOpener {
-        PublicServiceOpener(apiClient: PublicServicesAPIClient(context: .create()),
-                            routeManager: .init(routeCreateHandlers: .publicServiceRouteCreateHandlers))
-    }
-}
-
 private extension Dictionary {
     static var publicServiceRouteCreateHandlers: [ServiceTypeCode: PublicServiceRouteCreateHandler] {[
         PublicServiceType.criminalRecordCertificate.rawValue: { items in
