@@ -39,7 +39,7 @@ final class SwitchTableCell: BaseTableNibCell, NibLoadable {
     
     func configure(with viewModel: SwitchIconedViewModel) {
         titleLabel.text = viewModel.title
-        iconImageView.image = UIImage(named: viewModel.iconName)
+        iconImageView.image = viewModel.icon
         
         isOnObservation = viewModel.observe(\.isOn, onChange: { [weak self] (newValue) in
             guard let self = self else { return }
