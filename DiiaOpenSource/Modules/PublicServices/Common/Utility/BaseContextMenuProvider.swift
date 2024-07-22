@@ -6,16 +6,13 @@ import DiiaCommonTypes
 struct BaseContextMenuProvider: ContextMenuProviderProtocol {
     // MARK: - Properties
     private var items: [ContextMenuItem]
-    private let publicService: PublicServiceType?
     var title: String?
     
     // MARK: - Public Methods
-    init(publicService: PublicServiceType? = nil,
-         title: String? = nil,
+    init(title: String? = nil,
          items: [ContextMenuItem] = []) {
         self.items = items
         self.title = title
-        self.publicService = publicService
     }
 
     func hasContextMenu() -> Bool {

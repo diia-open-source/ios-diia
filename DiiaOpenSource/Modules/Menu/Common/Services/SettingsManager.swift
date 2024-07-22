@@ -18,13 +18,4 @@ class SettingsManager {
         return storeHelper.getValue(forKey: .isBiometryEnabled) == true
     }
     
-    func openSystemSettings() {
-        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
-        
-        onMainQueue {
-            if UIApplication.shared.canOpenURL(settingsUrl) {
-                UIApplication.shared.open(settingsUrl)
-            }
-        }
-    }
 }
