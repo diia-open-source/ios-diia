@@ -1,5 +1,6 @@
 import Foundation
 import DiiaAuthorization
+import DiiaCommonTypes
 
 enum VerificationFlow: String, VerificationFlowProtocol {
     

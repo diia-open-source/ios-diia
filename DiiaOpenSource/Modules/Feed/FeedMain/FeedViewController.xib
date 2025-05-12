@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedViewController" customModule="Diia" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyGroupStackView" destination="Fd2-db-myl" id="kdu-Ji-GWi"/>
+                <outlet property="contentView" destination="slB-42-mrd" id="8zL-jP-gNC"/>
+                <outlet property="floatingTextLabel" destination="XTl-61-rLi" id="YjP-tR-2qu"/>
+                <outlet property="scrollView" destination="EKq-mo-RkU" id="3Ma-jl-3on"/>
+                <outlet property="topNavigationView" destination="fRR-nC-ivT" id="Fyr-4i-PFe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qFB-2Q-f6f">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="75" translatesAutoresizingMaskIntoConstraints="NO" id="fRR-nC-ivT" customClass="TopNavigationBigView" customModule="DiiaUIComponents">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WzG-DC-Y2j">
+                            <rect key="frame" x="0.0" y="75" width="414" height="739"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKq-mo-RkU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="707"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="QK6-EY-3xP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fd2-db-myl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Fd2-db-myl" firstAttribute="leading" secondItem="QK6-EY-3xP" secondAttribute="leading" id="Aow-fL-Ul8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Fd2-db-myl" secondAttribute="bottom" id="Gsc-01-MRz"/>
+                                                <constraint firstItem="Fd2-db-myl" firstAttribute="top" secondItem="QK6-EY-3xP" secondAttribute="top" id="HLp-F3-5FV"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fd2-db-myl" secondAttribute="trailing" id="PjR-CN-EfH"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="QK6-EY-3xP" secondAttribute="trailing" id="F2V-Xc-Hst"/>
+                                        <constraint firstItem="QK6-EY-3xP" firstAttribute="leading" secondItem="EKq-mo-RkU" secondAttribute="leading" id="Pnf-wL-p8q"/>
+                                        <constraint firstAttribute="bottom" secondItem="QK6-EY-3xP" secondAttribute="bottom" constant="24" id="eAm-32-YyS"/>
+                                        <constraint firstItem="QK6-EY-3xP" firstAttribute="top" secondItem="EKq-mo-RkU" secondAttribute="top" id="fAb-ua-bSo"/>
+                                        <constraint firstItem="QK6-EY-3xP" firstAttribute="centerX" secondItem="EKq-mo-RkU" secondAttribute="centerX" id="oen-83-QEn"/>
+                                    </constraints>
+                                </scrollView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTl-61-rLi" customClass="FloatingTextLabel" customModule="DiiaUIComponents">
+                                    <rect key="frame" x="0.0" y="707" width="414" height="32"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="gmA-eQ-E4h"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WzG-DC-Y2j" secondAttribute="trailing" id="0MV-qM-bKh"/>
+                        <constraint firstItem="WzG-DC-Y2j" firstAttribute="top" secondItem="fRR-nC-ivT" secondAttribute="bottom" id="WEO-lk-For"/>
+                        <constraint firstItem="WzG-DC-Y2j" firstAttribute="leading" secondItem="qFB-2Q-f6f" secondAttribute="leading" id="gow-JH-IIx"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slB-42-mrd" customClass="ContentLoadingView" customModule="DiiaUIComponents">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qFB-2Q-f6f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2Bu-Tg-SWF"/>
+                <constraint firstItem="qFB-2Q-f6f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8CM-TA-nsd"/>
+                <constraint firstAttribute="trailing" secondItem="slB-42-mrd" secondAttribute="trailing" id="CPX-Hq-TLw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="slB-42-mrd" secondAttribute="bottom" id="IdE-q9-Wrs"/>
+                <constraint firstItem="qFB-2Q-f6f" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="WOK-yt-Jr5"/>
+                <constraint firstItem="slB-42-mrd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z0h-2g-CzI"/>
+                <constraint firstItem="qFB-2Q-f6f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ckt-qf-jXe"/>
+                <constraint firstItem="slB-42-mrd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ehH-Lc-Je4"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="96.428571428571431"/>
+        </view>
+    </objects>
+</document>

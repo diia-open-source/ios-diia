@@ -39,7 +39,7 @@ final class MenuViewController: UIViewController, Storyboarded {
     private func setupButton() {
         logoutButton.titleLabel?.font = FontBook.bigText
         logoutButton.contentEdgeInsets = Constants.buttonInsets
-        logoutButton.setLoadingState(.solid, withTitle: R.Strings.menu_logout.localized())
+        logoutButton.setLoadingState(.enabled, withTitle: R.Strings.menu_logout.localized())
     }
     
     private func setupPrivacyLabel() {

@@ -3,9 +3,10 @@ import DiiaCommonTypes
 import DiiaMVPModule
 import DiiaNetwork
 import DiiaPublicServices
+import DiiaCommonServices
 
-extension PSCriminalRecordExtractNetworkingContext {
-    static func create() -> PSCriminalRecordExtractNetworkingContext {
+extension NetworkingContext {
+    static func create() -> NetworkingContext {
         .init(session: NetworkConfiguration.default.session,
               host: EnvironmentVars.apiHost,
               headers: ["App-Version": AppConstants.App.appVersion,

@@ -1,6 +1,7 @@
 import UIKit
 import DiiaAuthorizationPinCode
 import DiiaAuthorization
+import DiiaCommonTypes
 
 // MARK: - Default Authorization
 extension BiometryRequestViewModel {

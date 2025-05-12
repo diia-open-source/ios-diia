@@ -1,4 +1,5 @@
 import Foundation
+import DiiaNetwork
 
 private struct EnvironmentKeys {
     static let apiBaseURL = "ApiBaseURL"
@@ -35,5 +36,10 @@ struct EnvironmentVars {
     static let isInhouseMode: Bool = {
         let value = (configuration == "Release") ? false : true
         return value
+    }()
+    
+    static let logger: NetworkLoggerProtocol? = {
+        if isInhouseMode { return PrintLogger() }
+        return nil
     }()
 }

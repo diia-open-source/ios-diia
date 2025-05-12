@@ -34,6 +34,10 @@
 		33B035332B29CF1700374227 /* AuthorizationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B035322B29CF1700374227 /* AuthorizationStorage.swift */; };
 		33B035352B29CF8900374227 /* Dictionary+UserIdentifyHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B035342B29CF8900374227 /* Dictionary+UserIdentifyHandlers.swift */; };
 		33C550412B48B6A200E100CD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 33C550402B48B6A200E100CD /* Lottie */; };
+		42F49A012DCC945600B8D36F /* ConstructorMockV2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F499F22DCC945600B8D36F /* ConstructorMockV2Module.swift */; };
+		42F49A022DCC945600B8D36F /* ConstructorMockV2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F499F32DCC945600B8D36F /* ConstructorMockV2Presenter.swift */; };
+		42F49A0C2DCC94C800B8D36F /* ContextMenuConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F49A0B2DCC94C800B8D36F /* ContextMenuConfigurable.swift */; };
+		42F49A0E2DCC959200B8D36F /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F49A0D2DCC959200B8D36F /* String+Ext.swift */; };
 		42F922AF29FBDC820072DDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F922AD29FBDC820072DDC1 /* LaunchScreen.storyboard */; };
 		42F922C229FBF4C10072DDC1 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922BD29FBF4C10072DDC1 /* AppConfigurator.swift */; };
 		42F922C329FBF4C10072DDC1 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F922BE29FBF4C10072DDC1 /* AppConstants.swift */; };
@@ -116,6 +120,24 @@
 		42F93A4029FFD11B0072DDC1 /* RNCryptor in Frameworks */ = {isa = PBXBuildFile; productRef = 42F93A3F29FFD11B0072DDC1 /* RNCryptor */; };
 		42F93A4229FFF9F50072DDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F93A4129FFF9F50072DDC1 /* AppDelegate.swift */; };
 		42F93A5C2A022AA90072DDC1 /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F93A5B2A022AA90072DDC1 /* Formatter+Extension.swift */; };
+		4937CB9F2D95A7C00014D2BC /* FeedNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4937CB972D95A7C00014D2BC /* FeedNewsViewController.xib */; };
+		4937CBA02D95A7C00014D2BC /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4937CB922D95A7C00014D2BC /* FeedViewController.xib */; };
+		4937CBA12D95A7C00014D2BC /* FeedNewsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4937CB9C2D95A7C00014D2BC /* FeedNewsDetailsViewController.xib */; };
+		4937CBA22D95A7C00014D2BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB912D95A7C00014D2BC /* FeedViewController.swift */; };
+		4937CBA32D95A7C00014D2BC /* FeedNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB952D95A7C00014D2BC /* FeedNewsPresenter.swift */; };
+		4937CBA42D95A7C00014D2BC /* FeedNewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB9B2D95A7C00014D2BC /* FeedNewsDetailsViewController.swift */; };
+		4937CBA52D95A7C00014D2BC /* FeedNewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB8A2D95A7C00014D2BC /* FeedNewsResponse.swift */; };
+		4937CBA62D95A7C00014D2BC /* FeedOfflineViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB8D2D95A7C00014D2BC /* FeedOfflineViewBuilder.swift */; };
+		4937CBA72D95A7C00014D2BC /* FeedNewsDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB9A2D95A7C00014D2BC /* FeedNewsDetailsPresenter.swift */; };
+		4937CBA82D95A7C00014D2BC /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB902D95A7C00014D2BC /* FeedPresenter.swift */; };
+		4937CBA92D95A7C00014D2BC /* FeedAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB882D95A7C00014D2BC /* FeedAPIClient.swift */; };
+		4937CBAA2D95A7C00014D2BC /* FeedModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB8F2D95A7C00014D2BC /* FeedModule.swift */; };
+		4937CBAB2D95A7C00014D2BC /* FeedNewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB942D95A7C00014D2BC /* FeedNewsModule.swift */; };
+		4937CBAC2D95A7C00014D2BC /* FeedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB962D95A7C00014D2BC /* FeedNewsViewController.swift */; };
+		4937CBAD2D95A7C00014D2BC /* FeedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB872D95A7C00014D2BC /* FeedAPI.swift */; };
+		4937CBAE2D95A7C00014D2BC /* FeedNewsDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CB992D95A7C00014D2BC /* FeedNewsDetailsModule.swift */; };
+		4937CBB02D95AC070014D2BC /* DiiaIdSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CBAF2D95AC050014D2BC /* DiiaIdSigner.swift */; };
+		4937CBB22D95AE5D0014D2BC /* PaymentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937CBB12D95AE4B0014D2BC /* PaymentManager.swift */; };
 		7B0AACE62B8B86E1007E00B8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B0AACE52B8B86E1007E00B8 /* FirebaseAnalytics */; };
 		7B0AACE82B8B86EA007E00B8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7B0AACE72B8B86EA007E00B8 /* FirebaseCrashlytics */; };
 		7B0AACF12B8B8D68007E00B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B0AACF02B8B8D68007E00B8 /* GoogleService-Info.plist */; };
@@ -175,10 +197,6 @@
 		7BE199672B17C319008C9FAC /* DriverReplacementStubModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE199662B17C319008C9FAC /* DriverReplacementStubModule.swift */; };
 		9487B53F2B76594800571A1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9487B53E2B76594800571A1D /* Alamofire */; };
 		9487B5422B765B8600571A1D /* ReactiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9487B5412B765B8600571A1D /* ReactiveKit */; };
-		9A8FD5F02B90D97500794736 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FD5EC2B90D97500794736 /* FeedViewController.swift */; };
-		9A8FD5F12B90D97500794736 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A8FD5ED2B90D97500794736 /* FeedViewController.xib */; };
-		9A8FD5F22B90D97500794736 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FD5EE2B90D97500794736 /* FeedPresenter.swift */; };
-		9A8FD5F32B90D97500794736 /* FeedModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FD5EF2B90D97500794736 /* FeedModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,7 +214,10 @@
 		33B035302B29CAE600374227 /* BankIDIdentifyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankIDIdentifyTask.swift; sourceTree = "<group>"; };
 		33B035322B29CF1700374227 /* AuthorizationStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationStorage.swift; sourceTree = "<group>"; };
 		33B035342B29CF8900374227 /* Dictionary+UserIdentifyHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+UserIdentifyHandlers.swift"; sourceTree = "<group>"; };
-		33FBAEA32B610D9E00A985D9 /* DiiaProd.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DiiaProd.xcconfig; sourceTree = "<group>"; };
+		42F499F22DCC945600B8D36F /* ConstructorMockV2Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorMockV2Module.swift; sourceTree = "<group>"; };
+		42F499F32DCC945600B8D36F /* ConstructorMockV2Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorMockV2Presenter.swift; sourceTree = "<group>"; };
+		42F49A0B2DCC94C800B8D36F /* ContextMenuConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextMenuConfigurable.swift; sourceTree = "<group>"; };
+		42F49A0D2DCC959200B8D36F /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		42F9229F29FBDC820072DDC1 /* DiiaOpenSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiiaOpenSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F922AE29FBDC820072DDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42F922B029FBDC820072DDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -281,6 +302,24 @@
 		42F93A3529FFCF530072DDC1 /* ProlongStartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProlongStartPresenter.swift; sourceTree = "<group>"; };
 		42F93A4129FFF9F50072DDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42F93A5B2A022AA90072DDC1 /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
+		4937CB872D95A7C00014D2BC /* FeedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPI.swift; sourceTree = "<group>"; };
+		4937CB882D95A7C00014D2BC /* FeedAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIClient.swift; sourceTree = "<group>"; };
+		4937CB8A2D95A7C00014D2BC /* FeedNewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewsResponse.swift; sourceTree = "<group>"; };
+		4937CB8D2D95A7C00014D2BC /* FeedOfflineViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedOfflineViewBuilder.swift; sourceTree = "<group>"; };
+		4937CB8F2D95A7C00014D2BC /* FeedModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModule.swift; sourceTree = "<group>"; };
+		4937CB902D95A7C00014D2BC /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		4937CB912D95A7C00014D2BC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		4937CB922D95A7C00014D2BC /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		4937CB942D95A7C00014D2BC /* FeedNewsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewsModule.swift; sourceTree = "<group>"; };
+		4937CB952D95A7C00014D2BC /* FeedNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewsPresenter.swift; sourceTree = "<group>"; };
+		4937CB962D95A7C00014D2BC /* FeedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewsViewController.swift; sourceTree = "<group>"; };
+		4937CB972D95A7C00014D2BC /* FeedNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedNewsViewController.xib; sourceTree = "<group>"; };
+		4937CB992D95A7C00014D2BC /* FeedNewsDetailsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewsDetailsModule.swift; sourceTree = "<group>"; };
+		4937CB9A2D95A7C00014D2BC /* FeedNewsDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewsDetailsPresenter.swift; sourceTree = "<group>"; };
+		4937CB9B2D95A7C00014D2BC /* FeedNewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNewsDetailsViewController.swift; sourceTree = "<group>"; };
+		4937CB9C2D95A7C00014D2BC /* FeedNewsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedNewsDetailsViewController.xib; sourceTree = "<group>"; };
+		4937CBAF2D95AC050014D2BC /* DiiaIdSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiiaIdSigner.swift; sourceTree = "<group>"; };
+		4937CBB12D95AE4B0014D2BC /* PaymentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentManager.swift; sourceTree = "<group>"; };
 		7B0AACF02B8B8D68007E00B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B0AACF22B8C609E007E00B8 /* AnaliticsNetworkAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnaliticsNetworkAdapter.swift; sourceTree = "<group>"; };
 		7B0AACF42B8C60D8007E00B8 /* AnalyticsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
@@ -336,10 +375,6 @@
 		7BE199552B16E753008C9FAC /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
 		7BE199632B17C230008C9FAC /* FaqOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqOpener.swift; sourceTree = "<group>"; };
 		7BE199662B17C319008C9FAC /* DriverReplacementStubModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverReplacementStubModule.swift; sourceTree = "<group>"; };
-		9A8FD5EC2B90D97500794736 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		9A8FD5ED2B90D97500794736 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
-		9A8FD5EE2B90D97500794736 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
-		9A8FD5EF2B90D97500794736 /* FeedModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +450,23 @@
 			path = EnterPinCode;
 			sourceTree = "<group>";
 		};
+		42F499F42DCC945600B8D36F /* ConstructorMock */ = {
+			isa = PBXGroup;
+			children = (
+				42F499F22DCC945600B8D36F /* ConstructorMockV2Module.swift */,
+				42F499F32DCC945600B8D36F /* ConstructorMockV2Presenter.swift */,
+			);
+			path = ConstructorMock;
+			sourceTree = "<group>";
+		};
+		42F49A002DCC945600B8D36F /* DevTools */ = {
+			isa = PBXGroup;
+			children = (
+				42F499F42DCC945600B8D36F /* ConstructorMock */,
+			);
+			path = DevTools;
+			sourceTree = "<group>";
+		};
 		42F9229629FBDC820072DDC1 = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +532,7 @@
 				42F922FF29FBF61B0072DDC1 /* UIScreen+Brightness.swift */,
 				42F93A5B2A022AA90072DDC1 /* Formatter+Extension.swift */,
 				7BE198FB2B1554E2008C9FAC /* BasePresenter+Support.swift */,
+				42F49A0D2DCC959200B8D36F /* String+Ext.swift */,
 				7B7693EC2B8741BC0007A89F /* NibLoadable+Extension.swift */,
 			);
 			path = Extensions;
@@ -559,6 +612,9 @@
 				42F9239829FBF61B0072DDC1 /* JWTParser.swift */,
 				42F9239F29FBF61B0072DDC1 /* CommunicationHelper.swift */,
 				7B0AACF62B8C6157007E00B8 /* CrashlyticsErrorRecorder.swift */,
+				4937CBAF2D95AC050014D2BC /* DiiaIdSigner.swift */,
+				42F49A0B2DCC94C800B8D36F /* ContextMenuConfigurable.swift */,
+				4937CBB12D95AE4B0014D2BC /* PaymentManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -579,7 +635,8 @@
 		42F9247029FBF7CD0072DDC1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9A8FD5EB2B90D94700794736 /* Feed */,
+				42F49A002DCC945600B8D36F /* DevTools */,
+				4937CB9E2D95A7C00014D2BC /* Feed */,
 				7BE198FE2B16DB2D008C9FAC /* Documents */,
 				7B65C5DB2B0394B30018D510 /* PublicServices */,
 				42F9247129FBF7CD0072DDC1 /* QRCodeScanner */,
@@ -827,7 +884,6 @@
 			isa = PBXGroup;
 			children = (
 				42F9310229FBF7D10072DDC1 /* DiiaDev.xcconfig */,
-				33FBAEA32B610D9E00A985D9 /* DiiaProd.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -848,6 +904,85 @@
 				42F93A3529FFCF530072DDC1 /* ProlongStartPresenter.swift */,
 			);
 			path = ProlongStart;
+			sourceTree = "<group>";
+		};
+		4937CB892D95A7C00014D2BC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB872D95A7C00014D2BC /* FeedAPI.swift */,
+				4937CB882D95A7C00014D2BC /* FeedAPIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4937CB8B2D95A7C00014D2BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB8A2D95A7C00014D2BC /* FeedNewsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4937CB8C2D95A7C00014D2BC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB892D95A7C00014D2BC /* API */,
+				4937CB8B2D95A7C00014D2BC /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4937CB8E2D95A7C00014D2BC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB8D2D95A7C00014D2BC /* FeedOfflineViewBuilder.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4937CB932D95A7C00014D2BC /* FeedMain */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB8E2D95A7C00014D2BC /* ViewModels */,
+				4937CB8F2D95A7C00014D2BC /* FeedModule.swift */,
+				4937CB902D95A7C00014D2BC /* FeedPresenter.swift */,
+				4937CB912D95A7C00014D2BC /* FeedViewController.swift */,
+				4937CB922D95A7C00014D2BC /* FeedViewController.xib */,
+			);
+			path = FeedMain;
+			sourceTree = "<group>";
+		};
+		4937CB982D95A7C00014D2BC /* FeedNews */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB942D95A7C00014D2BC /* FeedNewsModule.swift */,
+				4937CB952D95A7C00014D2BC /* FeedNewsPresenter.swift */,
+				4937CB962D95A7C00014D2BC /* FeedNewsViewController.swift */,
+				4937CB972D95A7C00014D2BC /* FeedNewsViewController.xib */,
+			);
+			path = FeedNews;
+			sourceTree = "<group>";
+		};
+		4937CB9D2D95A7C00014D2BC /* FeedNewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB992D95A7C00014D2BC /* FeedNewsDetailsModule.swift */,
+				4937CB9A2D95A7C00014D2BC /* FeedNewsDetailsPresenter.swift */,
+				4937CB9B2D95A7C00014D2BC /* FeedNewsDetailsViewController.swift */,
+				4937CB9C2D95A7C00014D2BC /* FeedNewsDetailsViewController.xib */,
+			);
+			path = FeedNewsDetails;
+			sourceTree = "<group>";
+		};
+		4937CB9E2D95A7C00014D2BC /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				4937CB8C2D95A7C00014D2BC /* Common */,
+				4937CB932D95A7C00014D2BC /* FeedMain */,
+				4937CB982D95A7C00014D2BC /* FeedNews */,
+				4937CB9D2D95A7C00014D2BC /* FeedNewsDetails */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		7B0AACEF2B8B8D68007E00B8 /* Firebase */ = {
@@ -1076,17 +1211,6 @@
 			path = Stubs;
 			sourceTree = "<group>";
 		};
-		9A8FD5EB2B90D94700794736 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				9A8FD5EF2B90D97500794736 /* FeedModule.swift */,
-				9A8FD5EE2B90D97500794736 /* FeedPresenter.swift */,
-				9A8FD5EC2B90D97500794736 /* FeedViewController.swift */,
-				9A8FD5ED2B90D97500794736 /* FeedViewController.xib */,
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1192,6 +1316,9 @@
 				42F922AF29FBDC820072DDC1 /* LaunchScreen.storyboard in Resources */,
 				42F93A0B29FBF7D90072DDC1 /* e-Ukraine-Light.otf in Resources */,
 				7B0AACF12B8B8D68007E00B8 /* GoogleService-Info.plist in Resources */,
+				4937CB9F2D95A7C00014D2BC /* FeedNewsViewController.xib in Resources */,
+				4937CBA02D95A7C00014D2BC /* FeedViewController.xib in Resources */,
+				4937CBA12D95A7C00014D2BC /* FeedNewsDetailsViewController.xib in Resources */,
 				7BD75AD92B678129000D54CA /* background_gradient.json in Resources */,
 				42F93A0929FBF7D90072DDC1 /* e-Ukraine-Medium.otf in Resources */,
 				42F93A0C29FBF7D90072DDC1 /* e-UkraineHead-Light.otf in Resources */,
@@ -1203,7 +1330,6 @@
 				7B7693DE2B7B05D60007A89F /* DocumentsStackReorderingViewController.xib in Resources */,
 				42F9310A29FBF7D10072DDC1 /* QRCodeScannerViewController.storyboard in Resources */,
 				42F93A0D29FBF7D90072DDC1 /* e-Ukraine-Regular.otf in Resources */,
-				9A8FD5F12B90D97500794736 /* FeedViewController.xib in Resources */,
 				7BD75ADB2B679FCB000D54CA /* splash_cropped.json in Resources */,
 				42F931DC29FBF7D20072DDC1 /* SplashScreenViewController.storyboard in Resources */,
 				42F93A0629FBF7D90072DDC1 /* Assets.xcassets in Resources */,
@@ -1250,6 +1376,20 @@
 				42F9325629FBF7D20072DDC1 /* SettingsManager.swift in Sources */,
 				42F9310C29FBF7D10072DDC1 /* DiiaQRScannerHelper.swift in Sources */,
 				42F9324529FBF7D20072DDC1 /* SettingsViewModel.swift in Sources */,
+				4937CBA22D95A7C00014D2BC /* FeedViewController.swift in Sources */,
+				4937CBA32D95A7C00014D2BC /* FeedNewsPresenter.swift in Sources */,
+				4937CBA42D95A7C00014D2BC /* FeedNewsDetailsViewController.swift in Sources */,
+				4937CBA52D95A7C00014D2BC /* FeedNewsResponse.swift in Sources */,
+				42F49A022DCC945600B8D36F /* ConstructorMockV2Presenter.swift in Sources */,
+				4937CBA62D95A7C00014D2BC /* FeedOfflineViewBuilder.swift in Sources */,
+				4937CBA72D95A7C00014D2BC /* FeedNewsDetailsPresenter.swift in Sources */,
+				4937CBA82D95A7C00014D2BC /* FeedPresenter.swift in Sources */,
+				4937CBA92D95A7C00014D2BC /* FeedAPIClient.swift in Sources */,
+				4937CBAA2D95A7C00014D2BC /* FeedModule.swift in Sources */,
+				4937CBAB2D95A7C00014D2BC /* FeedNewsModule.swift in Sources */,
+				4937CBAC2D95A7C00014D2BC /* FeedNewsViewController.swift in Sources */,
+				4937CBAD2D95A7C00014D2BC /* FeedAPI.swift in Sources */,
+				4937CBAE2D95A7C00014D2BC /* FeedNewsDetailsModule.swift in Sources */,
 				42F93A3829FFCF530072DDC1 /* ProlongStartModule.swift in Sources */,
 				3329AF6D2B2A1D96004B8517 /* VerificationFlow.swift in Sources */,
 				42F93A3A29FFCF530072DDC1 /* ProlongStartPresenter.swift in Sources */,
@@ -1260,14 +1400,13 @@
 				42F9246429FBF61B0072DDC1 /* CommunicationHelper.swift in Sources */,
 				42F9322F29FBF7D20072DDC1 /* SettingsPresenter.swift in Sources */,
 				42F9246D29FBF6880072DDC1 /* AuthorizationInterceptor.swift in Sources */,
-				9A8FD5F02B90D97500794736 /* FeedViewController.swift in Sources */,
 				42F9324629FBF7D20072DDC1 /* TitleCellViewModel.swift in Sources */,
 				7BE1992D2B16DB2D008C9FAC /* DocumentsCollectionModuleFactory.swift in Sources */,
 				7B7693E22B7B07AD0007A89F /* DSTransparentListView.swift in Sources */,
 				7B7693D32B7B03250007A89F /* DocumentReorderingCell.swift in Sources */,
+				42F49A012DCC945600B8D36F /* ConstructorMockV2Module.swift in Sources */,
 				7B7693C92B7AE63E0007A89F /* SharingDocsAPI.swift in Sources */,
 				7BE199412B16DB2D008C9FAC /* DocumentReorderingService.swift in Sources */,
-				9A8FD5F32B90D97500794736 /* FeedModule.swift in Sources */,
 				3329AF7A2B2A1F1F004B8517 /* EnterPinCodeAuthDelegate.swift in Sources */,
 				42F9339D29FBF7D30072DDC1 /* MainTabBarViewController.swift in Sources */,
 				7B7693DB2B7B05D60007A89F /* DocumentsStackReorderingPresenter.swift in Sources */,
@@ -1316,7 +1455,6 @@
 				33B035352B29CF8900374227 /* Dictionary+UserIdentifyHandlers.swift in Sources */,
 				42F9336F29FBF7D30072DDC1 /* StartAuthorizationPresenter.swift in Sources */,
 				42F922C229FBF4C10072DDC1 /* AppConfigurator.swift in Sources */,
-				9A8FD5F22B90D97500794736 /* FeedPresenter.swift in Sources */,
 				42F9324829FBF7D20072DDC1 /* SwitchIconedViewModel.swift in Sources */,
 				7BE198FA2B1511BA008C9FAC /* RatingServiceOpener.swift in Sources */,
 				42F93A0729FBF7D90072DDC1 /* AppFonts.swift in Sources */,
@@ -1340,9 +1478,11 @@
 				7BE199522B16E5E1008C9FAC /* ServicesProvider.swift in Sources */,
 				42F922C429FBF4C10072DDC1 /* AppRouter.swift in Sources */,
 				42F9244C29FBF61B0072DDC1 /* StartScenarioService.swift in Sources */,
+				4937CBB02D95AC070014D2BC /* DiiaIdSigner.swift in Sources */,
 				42F9244E29FBF61B0072DDC1 /* AccessHelper.swift in Sources */,
 				7B6728352AC1A0620042A113 /* JSONDecoderConfig.swift in Sources */,
 				42F922C329FBF4C10072DDC1 /* AppConstants.swift in Sources */,
+				42F49A0E2DCC959200B8D36F /* String+Ext.swift in Sources */,
 				7B7693E72B7C7E230007A89F /* AuthorizationStateHandler.swift in Sources */,
 				42F9339B29FBF7D30072DDC1 /* MainTabBarModule.swift in Sources */,
 				42F93A3929FFCF530072DDC1 /* ProlongStartViewController.swift in Sources */,
@@ -1358,8 +1498,10 @@
 				42F923FA29FBF61B0072DDC1 /* DeepLinkRoute.swift in Sources */,
 				7B0AACF92B8C670E007E00B8 /* AnaliticsAuthMethodsAdapter.swift in Sources */,
 				42F9325729FBF7D20072DDC1 /* MenuModule.swift in Sources */,
+				42F49A0C2DCC94C800B8D36F /* ContextMenuConfigurable.swift in Sources */,
 				3329AF732B2A1EE6004B8517 /* ChangePincodeModuleContext+Extension.swift in Sources */,
 				7BE198F52B150D6E008C9FAC /* PublicServiceType.swift in Sources */,
+				4937CBB22D95AE5D0014D2BC /* PaymentManager.swift in Sources */,
 				7B7693DD2B7B05D60007A89F /* DocumentsStackReorderingViewController.swift in Sources */,
 				3329AF692B29F928004B8517 /* AuthorizationContext+Extension.swift in Sources */,
 				42F9325329FBF7D20072DDC1 /* SwitchTableCell.swift in Sources */,
@@ -1504,7 +1646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1535;
+				CURRENT_PROJECT_VERSION = 2050;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DiiaOpenSource/Info.plist;
@@ -1520,7 +1662,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.0;
+				MARKETING_VERSION = 4.20.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.gov.diia.opensource.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1535,12 +1677,11 @@
 		};
 		42F922B529FBDC820072DDC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33FBAEA32B610D9E00A985D9 /* DiiaProd.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1535;
+				CURRENT_PROJECT_VERSION = 2050;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DiiaOpenSource/Info.plist;
@@ -1556,7 +1697,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.0;
+				MARKETING_VERSION = 4.20.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.gov.diia.opensource.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

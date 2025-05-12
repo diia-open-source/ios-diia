@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Platform</key>
+	<array>
+		<string>&quot;com.apple.platform.iphoneos&quot;</string>
+	</array>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchApplicationBase</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>Custom MVPConstructor template</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of service to create</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>New public service name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The name of the public service</string>
+			<key>Identifier</key>
+			<string>publicServiceName</string>
+			<key>Name</key>
+			<string>Public service name: (&quot;militaryBonds&quot;):</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The code of the public service</string>
+			<key>Identifier</key>
+			<string>publicServiceCode</string>
+			<key>Name</key>
+			<string>Public service code: (&quot;military-bonds&quot;):</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+</dict>
+</plist>

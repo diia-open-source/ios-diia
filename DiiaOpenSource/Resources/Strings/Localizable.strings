@@ -113,3 +113,7 @@
 
 // MARK: - Errors
 "error_no_internet" = "Немає інтернету";
+
+// MARK: - Feed
+"feed_ticker_label" = "Немає інтернету. Перевірте з'єднання";
+"feed_qr_title" = "Сканувати QR-код";

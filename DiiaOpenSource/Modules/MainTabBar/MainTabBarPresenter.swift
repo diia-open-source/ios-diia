@@ -16,6 +16,24 @@ private enum TabType {
     case documents(view: UIViewController)
     case menu(view: UIViewController)
     case feed(view: UIViewController)
+    
+    func isSameForAction(_ action: MainTabAction) -> Bool {
+        switch self {
+        case .services:
+            return action == .publicService
+        case .documents:
+            switch action {
+            case .documents:
+                return true
+            default:
+                return false
+            }
+        case .menu:
+            return action == .settings
+        case .feed:
+            return action == .feed
+        }
+    }
 }
 
 final class MainTabBarPresenter: NSObject, MainTabBarAction {
@@ -120,16 +138,16 @@ final class MainTabBarPresenter: NSObject, MainTabBarAction {
     }
     
     func processAction(action: MainTabAction) {
+        if let newIndex = tabs.firstIndex(where: { $0.isSameForAction(action) }),
+           currentIndex != newIndex {
+            selectItem(at: newIndex)
+        }
         switch action {
         case .documents(let type):
-            if currentIndex != 0 {
-                selectItem(at: 0)
-            }
             if let docType = type?.rawValue {
                 view.processChildAction(action: docType)
             }
-        default:
-            break
+        default: break
         }
     }
 }

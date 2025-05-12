@@ -8,4 +8,8 @@ class SharingDocsAPIClient: ApiClient<SharingDocsAPI>, SharingDocsApiClientProto
     func shareDriverLicense(documentId: String, localization: String?) -> Signal<ShareLinkModel, NetworkError> {
         return request(.shareDriverLicense(documentId: documentId, localization: localization))
     }
+    
+    func shareDocument(docType: String, documentId: String, localization: String?) -> Signal<ShareVerificationCodesModel, NetworkError> {
+        return request(.shareDocument(docType: docType, documentId: documentId, localization: localization))
+    }
 }

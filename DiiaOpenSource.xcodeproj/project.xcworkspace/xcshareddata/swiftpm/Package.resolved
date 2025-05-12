@@ -1,12 +1,13 @@
 {
+  "originHash" : "cc769e5b4396c96c4d7f34d3ac015753a26ade19ed43707fb2702af59dd43d62",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/abseil-cpp-binary.git",
       "state" : {
-        "revision" : "df308b8b46607675f2b9ec8e569109008f9155ce",
-        "version" : "1.2022062300.1"
+        "revision" : "194a6706acbd25e4ef639bcaddea16e8758a3e27",
+        "version" : "1.2024011602.0"
       }
     },
     {
@@ -23,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/app-check.git",
       "state" : {
-        "revision" : "3e464dad87dad2d29bb29a97836789bf0f8f67d2",
-        "version" : "10.18.1"
+        "revision" : "3b62f154d00019ae29a71e9738800bb6f18b236d",
+        "version" : "10.19.2"
       }
     },
     {
@@ -32,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
       "state" : {
-        "revision" : "be49849dcba96f2b5ee550d4eceb2c0fa27dade4",
-        "version" : "10.22.1"
+        "revision" : "eca84fd638116dd6adb633b5a3f31cc7befcbb7d",
+        "version" : "10.29.0"
       }
     },
     {
@@ -41,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
       "state" : {
-        "revision" : "482cfa4e5880f0a29f66ecfd60c5a62af28bd1f0",
-        "version" : "10.22.1"
+        "revision" : "fe727587518729046fc1465625b9afd80b5ab361",
+        "version" : "10.28.0"
       }
     },
     {
@@ -59,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleUtilities.git",
       "state" : {
-        "revision" : "26c898aed8bed13b8a63057ee26500abbbcb8d55",
-        "version" : "7.13.1"
+        "revision" : "57a1d307f42df690fdef2637f3e5b776da02aad6",
+        "version" : "7.13.3"
       }
     },
     {
@@ -68,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/grpc-binary.git",
       "state" : {
-        "revision" : "ea4cb5cc0c39c732b85386263116d2e2fdbbdc61",
-        "version" : "1.49.2"
+        "revision" : "e9fad491d0673bdda7063a0341fb6b47a30c5359",
+        "version" : "1.62.2"
       }
     },
     {
@@ -77,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/gtm-session-fetcher.git",
       "state" : {
-        "revision" : "76135c9f4e1ac85459d5fec61b6f76ac47ab3a4c",
-        "version" : "3.3.1"
+        "revision" : "a2ab612cb980066ee56d90d60d8462992c07f24b",
+        "version" : "3.5.0"
       }
     },
     {
@@ -95,8 +96,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/diia-open-source/ios-authorization.git",
       "state" : {
-        "revision" : "2c4f03d601e7eb49a8dd0688ed7cba28972c3416",
-        "version" : "1.0.14"
+        "revision" : "88c332feeeca7b9e3d82a0d6274ca4b7ee95670c",
+        "version" : "1.0.16"
       }
     },
     {
@@ -104,8 +105,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/diia-open-source/ios-commonservices.git",
       "state" : {
-        "revision" : "f6dace7885d74a491fb1802e547826a07ab28af9",
-        "version" : "1.0.10"
+        "revision" : "2ac4c4ee7daa7d09ab81d451744273564b638967",
+        "version" : "1.0.11"
       }
     },
     {
@@ -113,8 +114,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/diia-open-source/ios-commontypes.git",
       "state" : {
-        "revision" : "266d60228e62f4e4f6d5983e58f442c161438009",
-        "version" : "1.0.15"
+        "revision" : "dc4322e448dfc63566599dd480e45395368bbe51",
+        "version" : "1.0.19"
       }
     },
     {
@@ -122,8 +123,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/diia-open-source/ios-documents.git",
       "state" : {
-        "revision" : "b74be2b21a983eb764a7267d55c8cb1473d8f9fa",
-        "version" : "1.0.16"
+        "revision" : "5892c3bf97b47e5290b7349a696726892926259d",
+        "version" : "1.0.17"
       }
     },
     {
@@ -140,8 +141,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/diia-open-source/ios-network.git",
       "state" : {
-        "revision" : "bf51df19b0afea771893fa4baae70b1350e1f151",
-        "version" : "1.0.9"
+        "revision" : "b38b4f31489bd409b5929d4f30a05c21710a1bbd",
+        "version" : "1.0.11"
       }
     },
     {
@@ -149,8 +150,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/diia-open-source/ios-publicservices.git",
       "state" : {
-        "revision" : "f93c33a94032b410be3e05a8f9cfaf7d0e2c504f",
-        "version" : "1.0.9"
+        "revision" : "63a4e63f18f5f2c3c172299f4dc2c39c6c963ce9",
+        "version" : "1.0.10"
       }
     },
     {
@@ -158,8 +159,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/diia-open-source/ios-uicomponents.git",
       "state" : {
-        "revision" : "ab54579e453f982e3b239bc43cc596eb8f8ba684",
-        "version" : "1.0.13"
+        "revision" : "7fe06674419163947400de58ad13f8e469b716b4",
+        "version" : "1.0.15"
       }
     },
     {
@@ -176,8 +177,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/leveldb.git",
       "state" : {
-        "revision" : "43aaef65e0c665daadf848761d560e446d350d3d",
-        "version" : "1.22.4"
+        "revision" : "a0bc79961d7be727d258d33d5a6b2f1023270ba1",
+        "version" : "1.22.5"
       }
     },
     {
@@ -221,8 +222,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RNCryptor/RNCryptor.git",
       "state" : {
-        "revision" : "5e3bbf44f08bf90049537cb8902d8f4fa911a79a",
-        "version" : "5.1.0"
+        "revision" : "09b65118da7b7f1d14032d9850c1556e0d20853a",
+        "version" : "5.2.0"
       }
     },
     {
@@ -230,8 +231,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-protobuf.git",
       "state" : {
-        "revision" : "65e8f29b2d63c4e38e736b25c27b83e012159be8",
-        "version" : "1.25.2"
+        "revision" : "d72aed98f8253ec1aa9ea1141e28150f408cf17f",
+        "version" : "1.29.0"
       }
     },
     {
@@ -253,5 +254,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

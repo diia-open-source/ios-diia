@@ -11,6 +11,7 @@ struct DriverLicenseViewModelFactory {
                                            sharingApiClient: SharingDocsAPIClient(),
                                            ratingOpener: RatingServiceOpener(),
                                            faqOpener: FaqOpener(),
+                                           appRouter: AppRouter.instance,
                                            replacementModule: nil,
                                            docReorderingModule: { DocumentsReorderingModule() },
                                            docStackReorderingModule: { DocumentsStackReorderingModule(docType: .driverLicense) },

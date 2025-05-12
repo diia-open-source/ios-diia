@@ -35,6 +35,9 @@ final class MenuPresenter: MenuAction {
         view.addList(list: .init(items: diiaIDSections()))
         view.addList(list: .init(items: generalSections()))
         view.addList(list: .init(items: communicationSections()))
+        if EnvironmentVars.isInDebug {
+            view.addList(list: .init(componentId: nil, title: "Режим розробника", items: devTools()))
+        }
     }
 }
 
@@ -102,6 +105,17 @@ private extension MenuPresenter {
                 leftSmallIcon: R.image.menuFaq.image,
                 title: R.Strings.menu_faq.localized(),
                 onClick: { })
+        ]
+    }
+    
+    func devTools() -> [DSListItemViewModel] {
+        return [
+            DSListItemViewModel(
+                id: "",
+                title: "Тест конструктора дизайн системи",
+                onClick: { [weak self] in
+                    self?.view.open(module: ConstructorMockV2Module(contextMenuProvider: BaseContextMenuProvider()))
+                })
         ]
     }
 }

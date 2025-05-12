@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="e-Ukraine-Regular.otf">
+            <string>e-Ukraine-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="___VARIABLE_productName:identifier___ViewController" customModule="Diia" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="MXS-Lh-HRc" id="dm9-9N-V8L"/>
+                <outlet property="actionButtonBottomConstraint" destination="Sk4-s7-3BO" id="Ys9-W8-WS1"/>
+                <outlet property="attentionView" destination="ius-o7-N4U" id="7Ox-CP-Cdw"/>
+                <outlet property="contentView" destination="slB-42-mrd" id="Fyq-JW-n5A"/>
+                <outlet property="headerLabel" destination="het-xe-w8m" id="BSO-bJ-bty"/>
+                <outlet property="statusView" destination="Mh3-79-gyA" id="VU2-kk-9Xy"/>
+                <outlet property="topView" destination="631-0W-H4P" id="3qu-CI-3SG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="631-0W-H4P" customClass="TopNavigationView" customModule="DiiaUIComponents">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slB-42-mrd">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKq-mo-RkU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="712"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QK6-EY-3xP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="312"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="het-xe-w8m">
+                                            <rect key="frame" x="24" y="12" width="366" height="28"/>
+                                            <fontDescription key="fontDescription" name="e-Ukraine-Regular" family="e-Ukraine" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="200" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Fd2-db-myl">
+                                            <rect key="frame" x="24" y="64" width="366" height="224"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="ius-o7-N4U" customClass="ParameterizedAttentionView" customModule="DiiaUIComponents">
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="100"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-79-gyA" customClass="StatusInfoView" customModule="DiiaUIComponents">
+                                                    <rect key="frame" x="0.0" y="124" width="366" height="100"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Fd2-db-myl" firstAttribute="leading" secondItem="QK6-EY-3xP" secondAttribute="leading" constant="24" id="Aow-fL-Ul8"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fd2-db-myl" secondAttribute="bottom" constant="24" id="Gsc-01-MRz"/>
+                                        <constraint firstItem="Fd2-db-myl" firstAttribute="top" secondItem="het-xe-w8m" secondAttribute="bottom" constant="24" id="KXO-cg-jjg"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fd2-db-myl" secondAttribute="trailing" constant="24" id="PjR-CN-EfH"/>
+                                        <constraint firstAttribute="trailing" secondItem="het-xe-w8m" secondAttribute="trailing" constant="24" id="qyI-H0-Y15"/>
+                                        <constraint firstItem="het-xe-w8m" firstAttribute="top" secondItem="QK6-EY-3xP" secondAttribute="top" constant="12" id="rtl-Nh-FiP"/>
+                                        <constraint firstItem="het-xe-w8m" firstAttribute="leading" secondItem="QK6-EY-3xP" secondAttribute="leading" constant="24" id="xeK-iP-6AI"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="QK6-EY-3xP" secondAttribute="trailing" id="F2V-Xc-Hst"/>
+                                <constraint firstItem="QK6-EY-3xP" firstAttribute="leading" secondItem="EKq-mo-RkU" secondAttribute="leading" id="Pnf-wL-p8q"/>
+                                <constraint firstAttribute="bottom" secondItem="QK6-EY-3xP" secondAttribute="bottom" constant="8" id="eAm-32-YyS"/>
+                                <constraint firstItem="QK6-EY-3xP" firstAttribute="top" secondItem="EKq-mo-RkU" secondAttribute="top" id="fAb-ua-bSo"/>
+                                <constraint firstItem="QK6-EY-3xP" firstAttribute="centerX" secondItem="EKq-mo-RkU" secondAttribute="centerX" id="oen-83-QEn"/>
+                            </constraints>
+                        </scrollView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXS-Lh-HRc" customClass="LoadingStateButton" customModule="Diia" customModuleProvider="target">
+                            <rect key="frame" x="184" y="720" width="46" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="s2p-A3-VPg"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="actionTapped" destination="-1" eventType="touchUpInside" id="Hge-bN-V6D"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EKq-mo-RkU" secondAttribute="trailing" id="5DK-1m-37u"/>
+                        <constraint firstItem="MXS-Lh-HRc" firstAttribute="centerX" secondItem="slB-42-mrd" secondAttribute="centerX" id="AqO-rN-UG3"/>
+                        <constraint firstAttribute="bottom" secondItem="MXS-Lh-HRc" secondAttribute="bottom" id="Sk4-s7-3BO"/>
+                        <constraint firstItem="MXS-Lh-HRc" firstAttribute="top" secondItem="EKq-mo-RkU" secondAttribute="bottom" constant="8" id="pMu-h5-dBy"/>
+                        <constraint firstItem="EKq-mo-RkU" firstAttribute="top" secondItem="slB-42-mrd" secondAttribute="top" id="qrY-nW-GJ5"/>
+                        <constraint firstItem="EKq-mo-RkU" firstAttribute="leading" secondItem="slB-42-mrd" secondAttribute="leading" id="rQe-FK-jFv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="631-0W-H4P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9nl-VB-HoP"/>
+                <constraint firstItem="slB-42-mrd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AQi-Sk-Voj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="631-0W-H4P" secondAttribute="trailing" id="DSQ-gV-9dn"/>
+                <constraint firstItem="slB-42-mrd" firstAttribute="top" secondItem="631-0W-H4P" secondAttribute="bottom" id="MKg-Mh-Bik"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="slB-42-mrd" secondAttribute="bottom" id="Zmc-od-lDP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="slB-42-mrd" secondAttribute="trailing" id="k8X-0c-eqL"/>
+                <constraint firstItem="631-0W-H4P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ky0-1a-HKS"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

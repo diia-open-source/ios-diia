@@ -172,3 +172,5 @@ class AppRouter {
         }
     }
 }
+
+extension AppRouter: AppRouterProtocol {}

@@ -109,6 +109,9 @@ enum R {
         // MARK: - Errors
         case error_no_internet
         
+        // MARK: - Feed
+        case feed_ticker_label
+        case feed_qr_title
         func localized() -> String {
             let localized = NSLocalizedString(rawValue, bundle: Bundle.main, comment: "")
             return localized

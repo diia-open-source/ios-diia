@@ -26,7 +26,7 @@ class AppConfigurator {
         
         FontBook.mainFont = AppMainFont()
         FontBook.headingFont = AppHeadingFont()
-        UIComponentsConfiguration.shared.setup(imageNameProvider: DSImageNameResolver.instance)
+        UIComponentsConfiguration.shared.setup(imageNameProvider: DSImageNameResolver.instance, urlOpener: URLOpenerImpl())
 
         let deepLinkManager = DeepLinkManager()
         deepLinkManager.appRouter = AppRouter.instance
@@ -42,7 +42,9 @@ class AppConfigurator {
         let networkConfigurator = NetworkConfiguration.default
         networkConfigurator.set(serverTrustPolicies: networkConfigurator.activeServerTrustPolicies())
         networkConfigurator.set(interceptor: AuthorizationInterceptor())
-        networkConfigurator.set(logging: EnvironmentVars.isInDebug)
+        if EnvironmentVars.isInDebug {
+            networkConfigurator.set(logger: EnvironmentVars.logger)
+        }
         networkConfigurator.set(httpStatusCodeHandler: HTTPStatusCodeAdapter())
         networkConfigurator.set(jsonDecoderConfig: JSONDecoderConfig())
         networkConfigurator.set(responseErrorHandler: CrashlyticsErrorRecorder())
@@ -63,4 +65,13 @@ class RoutingHandler: RoutingHandlerProtocol {
     func popToPublicServices() {
         appRouter.popToTab(with: .publicService)
     }
+    
+    func popToFeed() {
+        appRouter.popToTab(with: .feed)
+    }
+    
+    func popToDocuments() {
+        appRouter.popToTab(with: .documents(type: nil))
+    }
 }
+

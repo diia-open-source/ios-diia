@@ -44,7 +44,7 @@ final class ProlongStartViewController: UIViewController, Storyboarded {
     }
     
     private func setupButton() {
-        actionButton.setLoadingState(.solid, withTitle: R.Strings.general_confirm.localized())
+        actionButton.setLoadingState(.enabled, withTitle: R.Strings.general_confirm.localized())
         actionButton.titleLabel?.font = FontBook.bigText
         actionButton.contentEdgeInsets = Constants.buttonSolidInsets
     }
