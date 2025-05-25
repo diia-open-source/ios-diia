@@ -42,7 +42,7 @@ final class DocumentsStackReorderingViewController: UIViewController {
     
     // MARK: - Private Methods
     private func initialSetup() {
-        backgroundImage.image = R.image.light_background.image
+        backgroundImage.image = UIImage.lightBackground
         setupTopView()
         setupCollectionView()
     }

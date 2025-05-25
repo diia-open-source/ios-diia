@@ -2,9 +2,9 @@ import UIKit
 import DiiaUIComponents
 
 struct SelectableIconTitleViewModel {
-    let iconName: String
+    let icon: UIImage
     let title: String
-    let selectedIconName: String
+    let selectedIcon: UIImage
 }
 
 class MainTabCollectionCell: BaseCollectionNibCell {
@@ -31,8 +31,7 @@ class MainTabCollectionCell: BaseCollectionNibCell {
         guard let vm = vm else {
             return
         }
-        let imageName = isSelected ? vm.selectedIconName : vm.iconName
-        iconView.image = UIImage(named: imageName)
+        iconView.image = isSelected ? vm.selectedIcon : vm.icon
     }
     
     func configureAccessibility(isSelected: Bool, currentValue: Int, totalValue: Int) {
@@ -44,7 +43,7 @@ class MainTabCollectionCell: BaseCollectionNibCell {
     func configure(with viewModel: SelectableIconTitleViewModel) {
         vm = viewModel
         titleLabel.setTextWithCurrentAttributes(text: viewModel.title)
-        iconView.image = UIImage(named: viewModel.iconName)
+        iconView.image = viewModel.icon
     }
     
     // MARK: - Public Methods

@@ -87,27 +87,27 @@ final class MainTabBarPresenter: NSObject, MainTabBarAction {
         switch tabs[index] {
         case .feed:
             return SelectableIconTitleViewModel(
-                iconName: R.image.menuFeedInactive.name,
+                icon: UIImage.menuFeedInactive,
                 title: R.Strings.main_screen_feed.localized(),
-                selectedIconName: R.image.menuFeedActive.name
+                selectedIcon: UIImage.menuFeedActive
             )
         case .services:
             return SelectableIconTitleViewModel(
-                iconName: R.image.menuServicesInactive.name,
+                icon: UIImage.menuServicesInactive,
                 title: R.Strings.main_screen_services.localized(),
-                selectedIconName: R.image.menuServicesActive.name
+                selectedIcon: UIImage.menuServicesActive
             )
         case .documents:
             return SelectableIconTitleViewModel(
-                iconName: R.image.menuDocumentsInactive.name,
+                icon: UIImage.menuDocumentsInactive,
                 title: R.Strings.main_screen_documents.localized(),
-                selectedIconName: R.image.menuDocumentsActive.name
+                selectedIcon: UIImage.menuDocumentsActive
             )
         case .menu:
             return SelectableIconTitleViewModel(
-                iconName: R.image.menuSettingsInactive.name,
+                icon: UIImage.menuSettingsInactive,
                 title: R.Strings.main_screen_menu.localized(),
-                selectedIconName: R.image.menuSettingsActive.name
+                selectedIcon: UIImage.menuSettingsActive
             )
         }
     }
@@ -123,16 +123,16 @@ final class MainTabBarPresenter: NSObject, MainTabBarAction {
         switch tabs[index] {
         case .feed(let viewController):
             view.setupCurrentController(viewController)
-            view.setBackground(background: .image(image: R.image.light_background.image))
+            view.setBackground(background: .image(image: UIImage.lightBackground))
         case .services(let viewController):
             view.setupCurrentController(viewController)
-            view.setBackground(background: .image(image: R.image.light_background.image))
+            view.setBackground(background: .image(image: UIImage.lightBackground))
         case .documents(let viewController):
             view.setupCurrentController(viewController)
             view.setBackground(background: .animation(name: "background_gradient"))
         case .menu(let viewController):
             view.setupCurrentController(viewController)
-            view.setBackground(background: .image(image: R.image.light_background.image))
+            view.setBackground(background: .image(image: UIImage.lightBackground))
         }
         view.setupSelectedItem(index: index)
     }
