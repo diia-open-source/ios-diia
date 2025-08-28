@@ -26,14 +26,14 @@ final class SettingsPresenter: SettingsAction {
             .titled(
                 vm: TitleCellViewModel(
                     title: R.Strings.settings_docs_order.localized(),
-                    iconName: R.image.orderIcon.name,
+                    icon: UIImage.orderIcon,
                     action: { [weak view] in view?.open(module: DocumentsReorderingModule()) }
                 )
             ),
             .titled(
                 vm: TitleCellViewModel(
                     title: R.Strings.menu_change_pin.localized(),
-                    iconName: R.image.menuChangePincode.name,
+                    icon: UIImage.menuChangePincode,
                     action: { [weak view] in
                         view?.open(module: ChangePincodeModule(pinCodeLength: AppConstants.App.defaultPinCodeLength, context: ChangePincodeModuleContext.create()))
                     }
@@ -50,21 +50,21 @@ final class SettingsPresenter: SettingsAction {
     
     private func prepareBiometrySettingsViewModel() -> SwitchIconedViewModel? {
         let biometryText: String
-        let biometryIcon: String
+        let biometryIcon: UIImage
         
         switch BiometryHelper.biometricType() {
         case .face:
             biometryText = R.Strings.menu_allow_face_id.localized()
-            biometryIcon = R.image.menuFaceID.name
+            biometryIcon = UIImage.menuFaceID
         case .touch:
             biometryText = R.Strings.menu_allow_touch_id.localized()
-            biometryIcon = R.image.menuTouchID.name
+            biometryIcon = UIImage.menuTouchID
         default:
             return nil
         }
         
         return SwitchIconedViewModel(title: biometryText,
-                               iconName: biometryIcon,
+                               icon: biometryIcon,
                                isOn: settingsManager.isBiometryAllowed(),
                                onSwitch: { [weak self] (isOn) in
                                    self?.settingsManager.setBiometry(isAllowed: isOn)

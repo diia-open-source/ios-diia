@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         if let window = window, stubImage == nil {
             stubImage = UIImageView(frame: window.frame)
-            stubImage.image = R.image.light_background.image
+            stubImage.image = UIImage.lightBackground
         }
         stubImage.alpha = 0
         self.window?.addSubview(stubImage)

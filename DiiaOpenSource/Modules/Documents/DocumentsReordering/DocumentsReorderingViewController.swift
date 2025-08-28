@@ -40,7 +40,7 @@ final class DocumentsReorderingViewController: UIViewController, DocumentsReorde
     
     // MARK: - Private Methods
     private func initialSetup() {
-        backgroundImage.image = R.image.light_background.image
+        backgroundImage.image = UIImage.lightBackground
         setupTopView()
         setupCollectionView()
     }

@@ -35,11 +35,11 @@ final class DocumentsReorderingPresenter: DocumentsReorderingAction {
             documentItem: DocReorderingCellInfoViewModel(
                 title: selectedDoc.documentName ?? "",
                 subtitle: nil,
-                rightIcon: R.image.ds_drag.image),
+                rightIcon: UIImage.dsDrag),
             multipleDocItem: (selectedDocuments.count < 2) ? nil : MultipleDocReorderingViewModel(
-                leftIcon: R.image.ds_stack.image,
+                leftIcon: UIImage.dsStack,
                 numberOfDocuments: selectedDocuments.count,
-                rightIcon: R.image.ds_ellipseArrowRight.image,
+                rightIcon: UIImage.dsEllipseArrowRight,
                 touchAction: { [weak self] in
                     guard let docTypeCode = selectedDoc.docType?.docCode, let docType = DocType(rawValue: docTypeCode) else { return }
                     self?.view.open(module: DocumentsStackReorderingModule(docType: docType))
