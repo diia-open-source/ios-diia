@@ -1,0 +1,32 @@
+class Notifier:
+    def send(self, message: str):
+        raise NotImplementedError
+
+
+
+class ViberNotifier(Notifier):
+    def send(self, message: str):
+        print(f"Sending to Viber: {message}")
+
+
+
+
+class NotificationService:
+    def __init__(self):
+        self.channels = []
+
+    def register(self, notifier: Notifier):
+        self.channels.append(notifier)
+
+    def notify_all(self, message: str):
+        for channel in self.channels:
+            channel.send(message)
+
+
+# створюємо один сервіс
+notification_service = NotificationService()
+
+notification_service.register(ViberNotifier())
+
+notification_service.notify_all("Новий клієнт!")
+
